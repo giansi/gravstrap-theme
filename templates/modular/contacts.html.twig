@@ -1,0 +1,32 @@
+{% embed 'partials/base_module.html.twig' %}
+    {% set section_id = "contacts" %}
+    {% set section_class = section_id %}
+    
+    {% block module_content %}
+        {% set information_columns = page.header.columns.information|default(3) %}
+        {% set map_columns = page.header.columns.map|default(9) %}
+        <div class="row contacts-text {{ classes.content_row }}">
+            {% if (page.header.form_position|default('right') == 'right') %}
+            <div class="col-md-{{ information_columns }} {{ classes.information_column }}">
+                {% block info %}
+                {{ page_sections["info"] }}
+                {% endblock %}
+            </div>
+            <div class="col-md-{{ map_columns }} {{ classes.form_column }}">
+                {% block form %}
+                {{ page_sections["pre_form"] }}
+                {{ simple_form(page.header.simple_form) }}
+                {{ page_sections["post_form"] }}
+                {% endblock %}
+            </div>
+            {% else %}
+            <div class="col-md-{{ map_columns }} {{ classes.form_column }}">
+                {{ block('form') }}
+            </div>
+            <div class="col-md-{{ information_columns }} {{ classes.information_column }}">
+                {{ block('info') }}
+            </div>
+            {% endif %}
+        </div>
+    {% endblock %}
+{% endembed %}

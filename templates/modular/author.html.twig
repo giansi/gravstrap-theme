@@ -1,0 +1,49 @@
+{% embed 'partials/base_module.html.twig' %}
+    {% set section_id = "author" %}
+    {% set section_class = section_id %}
+
+    {% block module_class %}
+    {% endblock %}
+
+    {% set author_image = page.header.author_image %}
+    {% set author_bio = page.header.author_bio %}
+    {% set education = page.header.education %}
+    {% set experience = page.header.experience %}
+    {% set skills = page.header.skills %}
+    {% block module_page_content %}
+        <div class="row {{ classes.content_row }}">
+            {% if author_image.visible %}
+            <div class="author-image col-md-{{ author_image.width|default(3) }} {{ author_image.extra_classes }}">
+                {{ page.media.images|first.cropZoom(200, 200) }}
+            </div>
+            {% endif %}
+
+            {% if author_bio.visible %}
+            <div class="author-about col-md-{{ author_bio.width|default(3) }} {{ author_bio.extra_classes }}">
+                {{ page.content }}
+            </div>
+            {% endif %}
+
+            {% if education.visible %}
+            <div class="author-lists author-education col-md-{{ education.width|default(4) }} {{ education.extra_classes }}">
+                {{ sections["page"]["extra.markdown"]["education"] }}
+            </div>
+            {% endif %}
+
+            {% if experience.visible %}
+            <div class="author-lists author-experience col-md-{{ experience.width|default(4) }} {{ experience.extra_classes }}">
+                {{ sections["page"]["extra.markdown"]["experience"] }}
+            </div>
+            {% endif %}
+
+            {% if skills.visible %}
+            <div class="author-skills col-md-{{ skills.width|default(4) }} {{ skills.extra_classes }}">
+                <h3>{{ page.header.skills.title }}</h3>
+                {% for item in gravstrap_collection["progressbar"] %}
+                    {{ item }}
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    {% endblock %}
+{% endembed %}

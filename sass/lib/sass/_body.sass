@@ -1,0 +1,67 @@
+$core-font: 1.8rem
+
+body
+    font-family: $font-family-default
+    font-size: $core-font
+
+h1, h2, h3, h4, h5, h6
+    font-family: $font-family-header
+
+$increase: 2.2rem
+
+h1
+    font-size: $core-font + $increase
+
+h2
+    font-size: $core-font + $increase - 0.3rem
+
+h3
+    font-size: $core-font + $increase - 0.6rem
+
+h4
+    font-size: $core-font + $increase - 0.9rem
+
+h5
+    font-size: $core-font + $increase - 1.2rem
+
+h6
+    font-size: $core-font + $increase - 1.5rem
+
+pre
+    padding: 0
+    border: 0
+
+.main-content
+    ul
+        +no-bullets
+        padding: 0
+        margin: 1rem 0
+
+        li:before
+            padding: 0 0.5rem
+            content: "\00BB"
+
+.main-content
+    margin-bottom: 2rem
+
+#breadcrumbs
+    padding-left: 0 !important
+    height: auto !important
+
+.sidebar-content ul, .related-pages
+    +no-bullets
+    padding: 0
+    margin: 0
+
+a:hover
+    text-decoration: none
+
+.module
+    text-align: center
+    margin-top: 3rem
+
+    p
+        color: #545454
+
+    hr
+        margin: 3rem 0

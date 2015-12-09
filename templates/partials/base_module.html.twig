@@ -1,0 +1,29 @@
+{% block module %}
+
+{% set classes = page.header.classes %}
+<section {% if section_id is defined %}id="{{ section_id }}"{% endif %}>
+    <div class="container{% block module_class %} module{% endblock %}{% if section_class is defined %} {{ section_class }}{% endif %}">
+        {% block module_page_content %}
+            {% if page.content != "" %}
+            <div class="row {{ classes.page_content_row }}">
+                <div class="col-md-{{ page.header.columns.content|default(12) }} {{ classes.page_content_column }}">
+                    {{ page.content }}
+                </div>
+            </div>
+            {% endif %}
+        {% endblock %}
+
+        {% set sections_file = page.header.sections_file %}
+        {% if sections_file is not defined or sections_file is null %} 
+            {% set sections_file = sections["modular"][page.folder]|keys|first %}
+        {% endif %}
+        
+        {% set page_sections = sections["page"][sections_file] %}
+        {% if page_sections is null %}
+            {% set page_sections = sections["modular"][page.folder][sections_file] %}
+        {% endif %}
+        {% block module_content %}
+        {% endblock %}
+    </div>
+</section>
+{% endblock %}

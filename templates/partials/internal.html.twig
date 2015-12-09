@@ -1,0 +1,35 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+{% set columns = page.header.columns %}
+{% set left_col_width = columns.left.width|default(4) %}
+{% set right_col_width = columns.right.width|default(0) %}
+{% set main_col_width = columns.main.width|default(8) %}
+<div class="container internal">
+    <div class="row">
+        {% if (left_col_width > 0) %}
+        <div class="col-md-{{ left_col_width }} {{ columns.left.extra_classes }}">
+            {% block left_sidebar %}
+            {% for section in sections["page"]["left_sidebar.markdown"] %}
+            {{ section }}
+            {% endfor %}
+            {% endblock %}
+        </div>
+        {% endif %}
+        <div class="col-md-{{ main_col_width }} {{ columns.main.extra_classes }}">
+            {% block page_content %}
+            {{ page.content }}
+            {% endblock %}
+        </div>
+        {% if (right_col_width > 0) %}
+        <div class="col-md-{{ right_col_width }} {{ columns.right.extra_classes }}">
+            {% block right_sidebar %}
+            {% for section in sections["page"]["right_sidebar.markdown"] %}
+            {{ section }}
+            {% endfor %}
+            {% endblock %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

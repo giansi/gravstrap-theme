@@ -1,0 +1,26 @@
+{% embed 'partials/base_module.html.twig' %}
+    {% set section_id = "team" %}
+    {% set section_class = section_id %}
+
+    {% block module_content %}
+        {% set items_per_row = page.header.items_per_row in [1, 2, 3, 4, 6] ? page.header.items_per_row : 1 %}
+        {% set col = 12 / items_per_row %}
+        <div class="row {{ classes.content_row }}">
+        {% for item in page.header.items %}
+            <div class="col-md-{{ col }} {{ classes.content_column }}">
+                <div class="item-image {{ classes.image }}">
+                    {{ page.media.images[item.image].cropZoom(150, 150) }}
+                </div>
+                {% if page_sections[item.section] is not null %}
+                <div class="item-text {{ classes.text }}">{{ page_sections[item.section] }}</div>
+                {% endif %}
+                <div class="item-social {{ classes.social }}">
+                    {% for social in item.social %}
+                        {% include 'partials/_link.html.twig' with { 'item': social } %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    {% endblock %}
+{% endembed %}

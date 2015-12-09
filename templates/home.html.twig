@@ -1,0 +1,16 @@
+{% embed 'partials/base.html.twig' %}
+    {% block header %}
+    <header id="header">
+        {{ gravstrap.jumbotron1 }}
+        {{ gravstrap.navbar1 }}
+    </header>
+    {% endblock %}
+
+    {% block content %}
+
+    {% for module in page.collection() %}
+        {{ module.content }}
+    {% endfor %}
+
+    {% endblock %}
+{% endembed %}

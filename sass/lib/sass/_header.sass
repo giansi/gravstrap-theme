@@ -1,0 +1,42 @@
+@import "../../../../../plugins/gravstrap/sass/lib/sass/mixins/navbar"
+.navbar
+    font-family: $font-family-header
+
+    ul.navbar-right li
+
+        a
+            padding: 1.4rem 0.7rem
+
+.navbar-brand
+    font-size: 2.5rem
+
+.jumbotron
+    color: #fff
+
+@media screen and (max-width: 900px)
+    .navbar
+        padding: 0.5rem !important
+        text-align: left !important
+
+@media screen and (max-width: 440px)
+    .jumbotron
+        background-position: center
+
+// Enable this two classes below if you want to use images with different resolutions
+// @media screen and (max-width: 1366px)
+//     .jumbotron
+//         background-image: url(images/bg.jpg)
+
+// @media screen and (min-width: 1367px)
+//     .jumbotron
+//         background-image: url(images/bg1920.jpg)
+
+.header
+    margin-bottom: 12rem
+    .navbar
+        +navbar(#fff, #6e6e6e, #6e6e6e, #010101, #6e6e6e, #010101, #010101)
+        box-shadow: 0 0.05rem 1rem #333
+
+@media screen and (max-width: 440px)
+    .header
+        margin-bottom: 6rem

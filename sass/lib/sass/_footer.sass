@@ -1,0 +1,54 @@
+#footer
+    padding: 2rem
+    background-color: rgba(30, 30, 30, 0.97)
+    margin-top: 3rem
+    color: #ccc
+    font-size: 1.5rem
+    text-align: center
+
+    .row:first-child
+        margin-bottom: 3rem
+
+    hr
+        color: #ccc
+
+    h4
+        font-size: 1.8rem
+
+    strong
+        color: #ffe727
+
+    a
+        color: #fff
+        font-weight: bold
+
+        &:hover
+            text-decoration: underline
+
+    ul
+        padding: 0
+
+        li
+            font-size: 1.8rem
+            margin-right: 1rem
+
+@media screen and (min-width: 480px)
+    #footer
+        ul
+            +inline-list
+
+            li
+                font-size: 1.8rem
+                margin-right: 1rem
+
+                & + li::before
+                    padding-right: 1rem
+                    content: "\00BB"
+
+@media screen and (max-width: 480px)
+    #footer
+        ul
+            +no-bullet
+
+        .row:last-child
+            margin-top: 0.8rem

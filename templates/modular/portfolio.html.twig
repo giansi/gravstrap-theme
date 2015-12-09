@@ -1,0 +1,8 @@
+{% embed 'partials/base_module.html.twig' %}
+    {% set section_id = "portfolio" %}
+    {% set section_class = section_id %}
+
+    {% block module_content %}
+        {{ gravstrap.thumbnails1 }}
+    {% endblock %}
+{% endembed %}

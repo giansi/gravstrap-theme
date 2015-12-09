@@ -1,0 +1,97 @@
+$rule-color: #F0F2F4
+
+// Info - Yellow
+$notes-info-border: #F0AD4E
+$notes-info-bg: #FCF8F2
+
+// Warning - Red
+$notes-warning-border: #D9534F
+$notes-warning-bg: #FDF7F7
+
+// Note - Blue
+$notes-note-border: #5BC0DE
+$notes-note-bg: #F4F8FA
+
+// Success - Green
+$notes-success-border: #5CB85C
+$notes-success-bg: #F1F9F1
+
+$core-line-height: 1.7 !default
+$leading-margin: $core-line-height * 0.5rem !default
+
+// Blockquote
+blockquote
+  margin: 0
+  margin-left: 0.5rem
+  border-left: 0
+
+  p
+    color: #999
+
+  cite
+    display: block
+    text-align: right
+    color: #666
+    font-size: 1.2rem
+
+// NOTES!!!!
+blockquote > blockquote > blockquote
+  margin: 0
+
+  p
+    padding: 15px
+    display: block
+    margin-top: 0rem
+    margin-bottom: 0rem
+
+  > p
+    // Yellow
+    margin-left: -71px
+    border-left: 10px solid $notes-info-border
+    background: $notes-info-bg
+    color: darken($notes-info-border, 15%)
+
+    a
+      color: darken($notes-info-border, 25%)
+
+      &:hover
+        color: lighten($notes-info-border, 5%)
+
+  > blockquote > p
+    // Red
+    margin-left: -90px
+    border-left: 10px solid $notes-warning-border
+    background: $notes-warning-bg
+    color: darken($notes-warning-border, 15%)
+
+    a
+      color: darken($notes-warning-border, 25%)
+
+      &:hover
+        color: lighten($notes-warning-border, 5%)
+
+  > blockquote > blockquote > p
+    // Blue
+    margin-left: -110px
+    border-left: 10px solid $notes-note-border
+    background: $notes-note-bg
+    color: darken($notes-note-border, 15%)
+
+    a
+      color: darken($notes-note-border, 25%)
+
+      &:hover
+        color: lighten($notes-note-border, 5%)
+
+  > blockquote > blockquote > blockquote > p
+    // Green
+    margin-left: -130px
+    border-left: 10px solid $notes-success-border
+    background: $notes-success-bg
+    color: darken($notes-success-border, 15%)
+
+    a
+      color: darken($notes-success-border, 25%)
+
+      &:hover
+        color: lighten($notes-success-border, 5%)

@@ -1,0 +1,30 @@
+{% embed 'partials/base_module.html.twig' %}
+    {% set section_id = "contact_map" %}
+    {% set section_class = "where-we-are" %}
+
+    {% block module_content %}        
+        {% set information_column = page.header.columns.information|default(3) %}
+        {% set map_column = page.header.columns.map|default(9) %}
+        <div class="row contacts {{ classes.content_row }}">
+            {% if (page.header.map_position|default('right') == 'left') %}
+            <div class="col-md-{{ map_column }} {{ classes.map_column }}">
+                {% block map %}
+                {{ page_sections["map"] }}
+                {% endblock %}
+            </div>
+            <div class="col-md-{{ information_column }} {{ classes.information_column }}">
+                {% block info %}
+                {{ page_sections["info"] }}
+                {% endblock %}
+            </div>
+            {% else %}
+            <div class="col-md-{{ information_column }} {{ classes.information_column }}">
+                {{ block('info') }}
+            </div>
+            <div class="col-md-{{ map_column }} {{ classes.map_column }}">
+                {{ block('map') }}
+            </div>
+            {% endif %}
+        </div>
+    {% endblock %}
+{% endembed %}

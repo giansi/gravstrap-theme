@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    {% include 'partials/metadata.html.twig' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png', true) }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://vendor/bootstrap/css/bootstrap.min.css', 103) %}
+        {% do assets.addCss('theme://css/gravstraptheme.css',-100) %}
+        {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs('theme://jquery', 101) %}
+        {% do assets.addJs('theme://vendor/bootstrap/js/bootstrap.min.js', 100) %}
+        {% do assets.addJs('theme://js/scroll.js') %}
+    {% endblock %}
+    {{ assets.js() }}
+{% endblock head%}
+</head>
+<body id="top" class="{{ page.header.body_classes }}">
+    {% block header %}
+    <header id="header" class="header">
+        {{ gravstrap.navbar1 }}
+    </header>
+    {% endblock %}
+
+    {% block body %}
+    <section id="body" class="{{ class }}">
+        {% block content %}
+        {% endblock %}
+    </section>
+    {% endblock %}
+
+    {% block footer %}
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 footer-navigation">
+                    {% include 'partials/navigation.html.twig' %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    {{ site.credits }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    &copy; {{ "now"|date("Y") }} {{ site.copyright }}
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% endblock %}
+
+    {{ cookiespolicy_markup }}
+</body>
+</html>
