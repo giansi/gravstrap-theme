@@ -5,39 +5,40 @@
     {% block module_class %}
     {% endblock %}
 
-    {% set author_image = page.header.author_image %}
-    {% set author_bio = page.header.author_bio %}
-    {% set education = page.header.education %}
-    {% set experience = page.header.experience %}
-    {% set skills = page.header.skills %}
     {% block module_page_content %}
-        <div class="row {{ classes.content_row }}">
+        {% set container_class = elements.container.class %}
+        {% set author_image = elements.author_image %}
+        {% set author_bio = elements.author_bio %}
+        {% set education = elements.education %}
+        {% set experience = elements.experience %}
+        {% set skills = elements.skills %}
+        <div class="row {{ container_class }}">
             {% if author_image.visible %}
-            <div class="author-image col-md-{{ author_image.width|default(3) }} {{ author_image.extra_classes }}">
+            <div class="author-image col-md-{{ author_image.column|default(3) }} {{ author_image.class }}">
                 {{ page.media.images|first.cropZoom(200, 200) }}
             </div>
             {% endif %}
 
             {% if author_bio.visible %}
-            <div class="author-about col-md-{{ author_bio.width|default(3) }} {{ author_bio.extra_classes }}">
+            <div class="author-about col-md-{{ author_bio.column|default(9) }} {{ author_bio.class }}">
                 {{ page.content }}
             </div>
             {% endif %}
 
             {% if education.visible %}
-            <div class="author-lists author-education col-md-{{ education.width|default(4) }} {{ education.extra_classes }}">
+            <div class="author-lists author-education col-md-{{ education.column|default(4) }} {{ education.class }}">
                 {{ sections["page"]["extra.markdown"]["education"] }}
             </div>
             {% endif %}
 
             {% if experience.visible %}
-            <div class="author-lists author-experience col-md-{{ experience.width|default(4) }} {{ experience.extra_classes }}">
+            <div class="author-lists author-experience col-md-{{ experience.column|default(4) }} {{ experience.class }}">
                 {{ sections["page"]["extra.markdown"]["experience"] }}
             </div>
             {% endif %}
 
             {% if skills.visible %}
-            <div class="author-skills col-md-{{ skills.width|default(4) }} {{ skills.extra_classes }}">
+            <div class="author-skills col-md-{{ skills.column|default(4) }} {{ skills.class }}">
                 <h3>{{ page.header.skills.title }}</h3>
                 {% for item in gravstrap_collection["progressbar"] %}
                     {{ item }}

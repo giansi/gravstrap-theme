@@ -2,26 +2,36 @@
     {% set section_id = "contact_map" %}
     {% set section_class = "where-we-are" %}
 
-    {% block module_content %}        
+    {% block module_content %}
+        
+        {% set container_class = elements.container.class %}
+        {% set information = elements.information %}
+        {% set information_column = information.column|default(3) %}
+        {% set information_column_class = information.class %}
+        {% set map = elements.map %}
+        {% set map_column = map.column|default(9) %}
+        {% set map_position = map.position|default('right') %}
+        {% set map_column_class = map.class %}
+        
         {% set information_column = page.header.columns.information|default(3) %}
         {% set map_column = page.header.columns.map|default(9) %}
-        <div class="row contacts {{ classes.content_row }}">
-            {% if (page.header.map_position|default('right') == 'left') %}
-            <div class="col-md-{{ map_column }} {{ classes.map_column }}">
+        <div class="row contacts {{ container_class }}">
+            {% if (map_position == 'left') %}
+            <div class="col-md-{{ map_column }} {{ map_column_class }}">
                 {% block map %}
                 {{ page_sections["map"] }}
                 {% endblock %}
             </div>
-            <div class="col-md-{{ information_column }} {{ classes.information_column }}">
+            <div class="col-md-{{ information_column }} {{ information_column_class }}">
                 {% block info %}
                 {{ page_sections["info"] }}
                 {% endblock %}
             </div>
             {% else %}
-            <div class="col-md-{{ information_column }} {{ classes.information_column }}">
+            <div class="col-md-{{ information_column }} {{ information_column_class }}">
                 {{ block('info') }}
             </div>
-            <div class="col-md-{{ map_column }} {{ classes.map_column }}">
+            <div class="col-md-{{ map_column }} {{ map_column_class }}">
                 {{ block('map') }}
             </div>
             {% endif %}

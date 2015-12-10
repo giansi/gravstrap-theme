@@ -3,16 +3,22 @@
     {% set section_class = section_id %}
     
     {% block module_content %}
-        {% set information_columns = page.header.columns.information|default(3) %}
-        {% set map_columns = page.header.columns.map|default(9) %}
-        <div class="row contacts-text {{ classes.content_row }}">
-            {% if (page.header.form_position|default('right') == 'right') %}
-            <div class="col-md-{{ information_columns }} {{ classes.information_column }}">
+        {% set container_class = elements.container.class %}
+        {% set information = elements.information %}
+        {% set information_column = information.column|default(3) %}
+        {% set information_column_class = information.class %}
+        {% set form = elements.form %}
+        {% set form_column = form.column|default(9) %}
+        {% set form_position = form.position %}
+        {% set form_column_class = form.class %}
+        <div class="row contacts-text {{ container_class }}">
+            {% if (form_position|default('right') == 'right') %}
+            <div class="col-md-{{ information_column }} {{ information_column_class }}">
                 {% block info %}
                 {{ page_sections["info"] }}
                 {% endblock %}
             </div>
-            <div class="col-md-{{ map_columns }} {{ classes.form_column }}">
+            <div class="col-md-{{ form_column }} {{ form_column_class }}">
                 {% block form %}
                 {{ page_sections["pre_form"] }}
                 {{ simple_form(page.header.simple_form) }}
@@ -20,10 +26,10 @@
                 {% endblock %}
             </div>
             {% else %}
-            <div class="col-md-{{ map_columns }} {{ classes.form_column }}">
+            <div class="col-md-{{ form_column }} {{ form_column_class }}">
                 {{ block('form') }}
             </div>
-            <div class="col-md-{{ information_columns }} {{ classes.information_column }}">
+            <div class="col-md-{{ information_column }} {{ information_column_class }}">
                 {{ block('info') }}
             </div>
             {% endif %}
