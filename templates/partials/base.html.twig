@@ -19,7 +19,7 @@
     {{ assets.css() }}
 
     {% block javascripts %}
-        {% do assets.addJs('theme://jquery', 101) %}
+        {% do assets.add('jquery',101) %}
         {% do assets.addJs('theme://vendor/bootstrap/js/bootstrap.min.js', 100) %}
         {% do assets.addJs('theme://js/scroll.js') %}
     {% endblock %}
