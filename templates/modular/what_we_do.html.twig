@@ -1,7 +1,4 @@
 {% embed 'partials/base_module.html.twig' %}
-    {% set section_id = "team" %}
-    {% set section_class = section_id %}
-
     {% block module_content %}
         {% set item = elements.item %}
         {% set item_column = item.column|default(4) %}

@@ -1,9 +1,7 @@
 {% embed 'partials/base_module.html.twig' %}
-    {% set section_id = "contact_map" %}
     {% set section_class = "where-we-are" %}
 
-    {% block module_content %}
-        
+    {% block module_content %}        
         {% set container_class = elements.container.class %}
         {% set information = elements.information %}
         {% set information_column = information.column|default(3) %}

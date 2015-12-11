@@ -1,5 +1,13 @@
 {% block module %}
+    
+{% if section_id is not defined %}
+{% set section_id = page.folder %}
+{%endif %}
 
+{% if section_class is not defined %}
+{% set section_class = section_id %}
+{%endif %}
+    
 {% set classes = page.header.classes %}
 {% set sections_file = page.header.sections_file %}
 {% if sections_file is not defined or sections_file is null %} 
