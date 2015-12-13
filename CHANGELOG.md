@@ -1,3 +1,9 @@
+# v0.9.4
+## 12/13/2015
+
+1. [](#improved)
+    * Updated author template to use the section file configured in the page header
+
 # v0.9.3
 ## 12/13/2015
 
