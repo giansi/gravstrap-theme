@@ -3,6 +3,7 @@
 #classes:
 #    page_content_row: extra-page-content-row
 #    page_content_column: col-sm-12
+#sections_file: portfolio.markdown
 
 #SINGLE PAGE
 #menu: Portfolio

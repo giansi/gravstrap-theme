@@ -17,6 +17,7 @@ layout_elements:
 #        class: extra-text-class
 #    social:
 #        class: extra-social-class
+#sections_file: team.markdown
 
 #SINGLE PAGE
 #menu: Team

@@ -15,6 +15,7 @@
 #        class: extra-icon-class
 #    text:
 #        class: extra-text-class
+#sections_file: what_we_do.markdown
 
 #SINGLE PAGE
 #menu: Business

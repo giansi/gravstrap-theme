@@ -15,6 +15,7 @@
 #        column: 9
 #        position: right
 #        class: extra-map-class
+#sections_file: contact_map.markdown
 
 #SINGLE PAGE
 #menu: Contact us
