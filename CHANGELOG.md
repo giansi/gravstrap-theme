@@ -1,3 +1,9 @@
+# v0.9.3
+## 12/13/2015
+
+1. [](#improved)
+    * Added theme dependencies
+
 # v0.9.2
 ## 12/12/2015
 
