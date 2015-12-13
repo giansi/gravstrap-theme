@@ -23,15 +23,15 @@
             </div>
             {% endif %}
 
-            {% if education.visible %}
+            {% if education.visible and page_sections["education"] is not null %}
             <div class="author-lists author-education col-md-{{ education.column|default(4) }} {{ education.class }}">
-                {{ sections["page"]["extra.markdown"]["education"] }}
+                {{ page_sections["education"] }}
             </div>
             {% endif %}
 
-            {% if experience.visible %}
+            {% if experience.visible and page_sections["experience"] is not null %}
             <div class="author-lists author-experience col-md-{{ experience.column|default(4) }} {{ experience.class }}">
-                {{ sections["page"]["extra.markdown"]["experience"] }}
+                {{ page_sections["experience"] }}
             </div>
             {% endif %}
 

@@ -29,6 +29,7 @@ layout_elements:
 #        column: 4
         class: col-sm-12
         title: Skills
+sections_file: author.markdown
 
 
 # SKILLS
