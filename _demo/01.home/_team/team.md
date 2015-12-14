@@ -11,12 +11,9 @@ layout_elements:
         classes:
 #            row: extra-item-row
             column: col-sm-6  col-xs-12
-#    image:
-#        class: extra-image-class
-#    text:
-#        class: extra-text-class
-#    social:
-#        class: extra-social-class
+#            image: extra-image-class
+#            text: extra-text-class
+#            social: extra-social-class
 #sections_file: team.markdown
 
 #SINGLE PAGE

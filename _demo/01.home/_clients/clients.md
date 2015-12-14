@@ -11,8 +11,7 @@ layout_elements:
         classes:
 #            row: extra-item-row
             column: col-sm-6 col-xs-12
-#    image:
-#        class: extra-image-class
+#            image: extra-image-class
 
 #SINGLE PAGE
 #menu: Clients

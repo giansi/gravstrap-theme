@@ -1,6 +1,6 @@
 ---
 # LAYOUT CUSTOMIZATION OPTIONS
-#layout_elements:
+layout_elements:
 #    content:
 #        column: 12
 #        classes:
@@ -11,10 +11,8 @@
 #        classes:
 #            row: extra-item-row
 #            column: col-sm-12
-#    icon:
-#        class: extra-icon-class
-#    text:
-#        class: extra-text-class
+#            icon:  extra-icon-class
+#            text: extra-text-class
 #sections_file: what_we_do.markdown
 
 #SINGLE PAGE

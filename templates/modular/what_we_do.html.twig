@@ -1,17 +1,19 @@
 {% embed 'partials/base_module.html.twig' %}
+    {% set section_class = "what-we-do" %}
+
     {% block module_content %}
         {% set item = elements.item %}
         {% set item_column = item.column|default(4) %}
         {% set item_row_class = item.classes.row %}
         {% set item_column_class = item.classes.column %}
-        {% set icon_class = elements.icon.class %}
-        {% set text_class = elements.text.class %}
+        {% set item_icon_class = item.classes.icon %}
+        {% set item_text_class = item.classes.text %}
 
         <div class="row {{ item_row_class }}">
             {% for item in page.header.items %}
                 <div class="col-md-{{ item_column }} {{ item_column_class }}">
-                    <div class="item-icon {{ icon_class }}">{{ include ("partials/_icon.html.twig") }}</div>
-                    <div class="item-text {{ text_class }}">
+                    <div class="item-icon {{ item_icon_class }}">{{ include ("partials/_icon.html.twig") }}</div>
+                    <div class="item-text {{ item_text_class }}">
                         {{ page_sections[item.section] }}
                     </div>
                 </div>
