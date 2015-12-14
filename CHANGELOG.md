@@ -1,3 +1,9 @@
+# v0.9.6
+## 12/14/2015
+
+1. [](#improved)
+    * rearranged portfolio module
+
 # v0.9.5
 ## 12/14/2015
 
