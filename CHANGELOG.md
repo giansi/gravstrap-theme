@@ -1,3 +1,11 @@
+# v0.9.5
+## 12/14/2015
+
+1. [](#improved)
+    * rearranged clients, team, what_we_do modules elements classes
+2. [](#bugfix)
+    * fixed modules sections class names
+
 # v0.9.4
 ## 12/13/2015
 
