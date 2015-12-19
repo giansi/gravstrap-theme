@@ -1,3 +1,11 @@
+# v0.9.8
+## 12/19/2015
+
+1. [](#new)
+    * Theme can be selected from Admin Panel
+    * Added missing gravstrap-theme.yml, thumbnail.jpg
+    * Taken a better screenshot
+
 # v0.9.7
 ## 12/16/2015
 
