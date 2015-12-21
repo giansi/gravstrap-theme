@@ -1,0 +1,30 @@
+{{ content }}
+
+<div id="{{ page.header.slideme.id }}"{% if page.header.fullwidth is defined and page.header.fullwidth == false %} class="container"{% endif %}>
+  <div class="slideme">
+    {% for slide in page.header.slides %}
+       <div class="modular-row showcase flush-top" {% if page.media[slide.image] %}style="background-image: url({{ page.media[slide.image].url }});"{% endif %}>
+          <h1>{{ slide.heading }}</h1>
+          <h2>{{ slide.subheading }}</h2>
+          <a class="button" href="{{ slide.button_url }}">{{ slide.button_text }}</a>
+      </div>
+    {% endfor %}
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#{{ page.header.slideme.id }}').slideme({
+      arrows: {{ page.header.slideme.arrows }},
+      autoslide: {{ page.header.slideme.autoslide }},
+      autoslideHoverStop: {{ page.header.slideme.autoslideHoverStop }},
+      interval: {{ page.header.slideme.interval }},
+      loop: {{ page.header.slideme.loop }},
+      pagination: "numbers",
+      transition : '{{ page.header.slideme.transition }}',
+      itemsForSlide: {{ page.header.slideme.itemsForSlide }},
+      touch: {{ page.header.slideme.touch }},
+      swipe: {{ page.header.slideme.swipe }},
+    });
+});
+</script>

@@ -14,6 +14,7 @@
     {% block stylesheets %}
         {% do assets.addCss('theme://vendor/bootstrap/css/bootstrap.min.css', 103) %}
         {% do assets.addCss('theme://css/gravstraptheme.css',-100) %}
+        {% do assets.addCss('theme://css/slideme.css',100) %}
         {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
     {% endblock %}
     {{ assets.css() }}
@@ -21,12 +22,12 @@
     {% block javascripts %}
         {% do assets.add('jquery',101) %}
         {% do assets.addJs('theme://vendor/bootstrap/js/bootstrap.min.js', 100) %}
-        {% do assets.addJs('theme://js/scroll.js') %}
+        {% do assets.addJs('theme://js/jquery.slideme2.js') %}
     {% endblock %}
     {{ assets.js() }}
 {% endblock head%}
 </head>
-<body id="top" class="{{ page.header.body_classes }}">
+<body class="{{ page.header.body_classes }}">
     {% block header %}
     <header id="header" class="header">
         {{ gravstrap.navbar1 }}
@@ -63,5 +64,22 @@
     {% endblock %}
 
     {{ cookiespolicy_markup }}
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//stats.diblas.net/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 2]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//stats.diblas.net/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+
 </body>
 </html>

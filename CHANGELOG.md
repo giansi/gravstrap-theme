@@ -1,3 +1,9 @@
+# v0.9.9
+## 12/21/2015
+
+1. [](#new)
+    * Added showcase module which handles a different slider that bootstrap one
+
 # v0.9.8
 ## 12/19/2015
 
