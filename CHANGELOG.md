@@ -1,3 +1,9 @@
+# v0.9.11
+## 12/23/2015
+
+1. [](#bugfix)
+    * Added langswitcher dependency
+
 # v0.9.10
 ## 12/23/2015
 

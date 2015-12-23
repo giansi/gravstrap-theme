@@ -1,5 +1,5 @@
 name: Gravstrap Theme
-version: 0.9.10
+version: 0.9.11
 description: "Gravstrap Theme helps you to start a new Grav CMS site with Bootstrap support and several ready to use modules. It is also perfect to start a new Bootstrap custom theme, to create your unique design."
 icon: picture-o
 author:
@@ -15,6 +15,7 @@ license: MIT
 dependencies:
   - gravstrap
   - markdown-sections
+  - langswitcher
   - blog
   - simplesearch
   - feed
