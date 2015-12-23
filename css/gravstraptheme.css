@@ -531,7 +531,7 @@ a:hover {
   text-align: center;
   padding: 1.5rem 0;
 }
-.what-we-do .item-text {
+.what-we-do .item-text p {
   text-align: justify;
 }
 
@@ -560,6 +560,9 @@ a:hover {
   border-radius: 50%;
 }
 .team .item-text {
+  min-height: 15rem;
+}
+.team .item-text p {
   text-align: justify;
 }
 
