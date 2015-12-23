@@ -1,3 +1,9 @@
+# v0.9.10
+## 12/23/2015
+
+1. [](#improved)
+    * Justified text only for paragraphs in team and what_we_do modules
+
 # v0.9.9
 ## 12/21/2015
 
