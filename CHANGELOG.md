@@ -1,3 +1,9 @@
+# v0.9.12
+## 01/02/2016
+
+1. [](#improved)
+    * Updated blog dependency to blog-injector
+
 # v0.9.11
 ## 12/23/2015
 
