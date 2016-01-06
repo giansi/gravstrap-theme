@@ -1,3 +1,9 @@
+# v0.9.13
+## 01/06/2016
+
+1. [](#improved)
+    * Added breadcrumbs plugin
+
 # v0.9.12
 ## 01/02/2016
 
