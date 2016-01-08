@@ -1,3 +1,9 @@
+# v0.9.14
+## 01/08/2016
+
+1. [](#bugfix)
+    * Fixed toggled navbar active link background color
+
 # v0.9.13
 ## 01/06/2016
 
