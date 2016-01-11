@@ -1,3 +1,9 @@
+# v0.9.15
+## 01/11/2016
+
+1. [](#bugfix)
+    * Gravstrap-theme css was not correctly compiled. Fixed.
+
 # v0.9.14
 ## 01/08/2016
 
