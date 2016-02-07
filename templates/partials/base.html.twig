@@ -30,7 +30,7 @@
 <body class="{{ page.header.body_classes }}">
     {% block header %}
     <header id="header" class="header">
-        {{ gravstrap.navbar1 }}
+        {{ navbar1 }}
     </header>
     {% endblock %}
 
@@ -42,24 +42,7 @@
     {% endblock %}
 
     {% block footer %}
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 footer-navigation">
-                    {% include 'partials/navigation.html.twig' %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    {{ site.credits }}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    &copy; {{ "now"|date("Y") }} {{ site.copyright }}
-                </div>
-            </div>
-        </div>
+    {{ footer }}
     </footer>
     {% endblock %}
 

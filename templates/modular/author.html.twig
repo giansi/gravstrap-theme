@@ -1,49 +1,31 @@
-{% embed 'partials/base_module.html.twig' %}
-    {% set section_class = "author" %}
-
-    {% block module_class %}
-    {% endblock %}
-
-    {% block module_page_content %}
-        {% set container_class = elements.container.class %}
-        {% set author_image = elements.author_image %}
-        {% set author_bio = elements.author_bio %}
-        {% set education = elements.education %}
-        {% set experience = elements.experience %}
-        {% set skills = elements.skills %}
-        <div class="row {{ container_class }}">
-            {% if author_image.visible %}
-            <div class="author-image col-md-{{ author_image.column|default(3) }} {{ author_image.class }}">
+<section id="author">
+    <div class="container author"> 
+        <div class="row">
+            <div class="author-image col-md-3 col-sm-12">
                 {{ page.media.images|first.cropZoom(200, 200) }}
             </div>
-            {% endif %}
 
-            {% if author_bio.visible %}
-            <div class="author-about col-md-{{ author_bio.column|default(9) }} {{ author_bio.class }}">
+            <div class="author-about col-md-9 col-sm-12">
                 {{ page.content }}
             </div>
-            {% endif %}
 
-            {% if education.visible and page_sections["education"] is not null %}
-            <div class="author-lists author-education col-md-{{ education.column|default(4) }} {{ education.class }}">
-                {{ page_sections["education"] }}
+            {% if sections.education is not null %}
+            <div class="author-lists author-education col-md-4 col-sm-12">
+                {{ sections.education }}
             </div>
             {% endif %}
 
-            {% if experience.visible and page_sections["experience"] is not null %}
-            <div class="author-lists author-experience col-md-{{ experience.column|default(4) }} {{ experience.class }}">
-                {{ page_sections["experience"] }}
+            {% if sections.experience is not null %}
+            <div class="author-lists author-experience col-md-4 col-sm-12">
+                {{ sections.experience }}
             </div>
             {% endif %}
 
-            {% if skills.visible %}
-            <div class="author-skills col-md-{{ skills.column|default(4) }} {{ skills.class }}">
-                <h3>{{ page.header.skills.title }}</h3>
-                {% for item in gravstrap_collection["progressbar"] %}
-                    {{ item }}
-                {% endfor %}
+            {% if sections.skills is not null%}                
+            <div class="author-skills col-md-4 col-sm-12">
+                {{ sections.skills }}
             </div>
             {% endif %}
         </div>
-    {% endblock %}
-{% endembed %}
+    </div>
+</section>

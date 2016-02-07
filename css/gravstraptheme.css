@@ -38,21 +38,6 @@ pre {
   border: 0;
 }
 
-.main-content ul {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
-}
-.main-content ul li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-}
-.main-content ul li:before {
-  padding: 0 0.5rem;
-  content: "»";
-}
-
 .main-content {
   margin-bottom: 2rem;
 }
@@ -107,6 +92,9 @@ a:hover {
   }
   .navbar .navbar-nav > li > a {
     color: #fff !important;
+  }
+  .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover {
+    background-color: #131313 !important;
   }
 }
 .navbar .navbar-center {
@@ -247,6 +235,9 @@ a:hover {
   }
   .navbar.scrolled .navbar-nav > li > a {
     color: #fff !important;
+  }
+  .navbar.scrolled .navbar-nav > .active > a, .navbar.scrolled .navbar-nav > .active > a:hover {
+    background-color: #131313 !important;
   }
 }
 .navbar.scrolled .navbar-center {
@@ -410,6 +401,9 @@ a:hover {
   .header .navbar .navbar-nav > li > a {
     color: #fff !important;
   }
+  .header .navbar .navbar-nav > .active > a, .header .navbar .navbar-nav > .active > a:hover {
+    background-color: #131313 !important;
+  }
 }
 .header .navbar .navbar-center {
   display: inline-block;
@@ -527,46 +521,6 @@ a:hover {
     margin-bottom: 6rem;
   }
 }
-.what-we-do .item-icon {
-  text-align: center;
-  padding: 1.5rem 0;
-}
-.what-we-do .item-text {
-  text-align: justify;
-}
-
-.where-we-are {
-  margin-top: 2rem;
-}
-.where-we-are .contacts {
-  text-align: left;
-}
-.where-we-are .googlemaps {
-  width: 100%;
-  height: 500px;
-  background-color: #ccc;
-}
-
-.portfolio .thumbnail {
-  text-align: left;
-}
-
-.team .item-image {
-  padding: 1.5rem 0;
-}
-.team .item-image img {
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
-.team .item-text {
-  text-align: justify;
-}
-
-.clients .item-image {
-  margin: 1.5rem 0;
-}
-
 .slideme_container {
   overflow: hidden;
   height: 60rem;
@@ -707,13 +661,6 @@ a:hover {
 .slideme_container .pagination .numbers li.current {
   width: 1rem;
   height: 1rem;
-}
-
-.contacts p {
-  margin-bottom: 3rem;
-}
-.contacts .contacts-text {
-  text-align: left;
 }
 
 .author .author-image {

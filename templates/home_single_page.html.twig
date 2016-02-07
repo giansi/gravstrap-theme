@@ -2,11 +2,14 @@
     {% block header %}
     <header id="header">
         {{ jumbotron1 }}
-        {{ navbar1 }}
+        {{ navbar2 }}
     </header>
     {% endblock %}
 
     {% block content %}
-        {{ content }}
+    {% for module in page.collection() %}
+        {{ module.content }}
+    {% endfor %}
+
     {% endblock %}
 {% endembed %}
