@@ -1,3 +1,9 @@
+# v1.0.0-beta
+## 02/10/2016
+
+1. [](#new)
+    * Updated to work with new Gravstrap 1.0.0 beta release
+
 # v0.9.15
 ## 01/11/2016
 
