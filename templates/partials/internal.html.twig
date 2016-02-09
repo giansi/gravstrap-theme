@@ -1,35 +1,11 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-{% set elements = page.header.layout_elements %}
-{% set left_sidebar = elements.left_sidebar %}
-{% set left_sidebar_column = left_sidebar.column|default(4) %}
-{% set left_sidebar_class = left_sidebar.class %}
-{% set main_content = elements.main_content %}
-{% set main_content_column = main_content.column|default(8) %}
-{% set main_content_class = main_content.class %}
-{% set right_sidebar = elements.right_sidebar %}
-{% set right_sidebar_column = right_sidebar.column|default(0) %}
-{% set right_sidebar_class = right_sidebar.class %}
 <div class="container internal">
     <div class="row">
-        {% if (left_sidebar_column > 0) %}
-        <div class="col-md-{{ left_sidebar_column }} {{ left_sidebar_class }}">
-            {% for section in sections["page"]["left_sidebar.markdown"] %}
-            {{ section }}
-            {% endfor %}
-        </div>
-        {% endif %}
-        <div class="col-md-{{ main_content_column }} {{ main_content_class }}">
-            {{ page.content }}
-        </div>
-        {% if (right_sidebar_column > 0) %}
-        <div class="col-md-{{ right_sidebar_column }} {{ right_sidebar_class }}">
-            {% for section in sections["page"]["right_sidebar.markdown"] %}
-            {{ section }}
-            {% endfor %}
-        </div>
-        {% endif %}
+        {{ sections.left }}
+        {{ sections.main }}
+        {{ sections.right }}
     </div>
 </div>
 {% endblock %}

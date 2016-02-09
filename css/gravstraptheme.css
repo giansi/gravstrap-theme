@@ -713,69 +713,6 @@ a:hover {
   min-height: 600px;
 }
 
-#footer {
-  padding: 2rem;
-  background-color: rgba(30, 30, 30, 0.97);
-  margin-top: 3rem;
-  color: #ccc;
-  font-size: 1.5rem;
-  text-align: center;
-}
-#footer .row:first-child {
-  margin-bottom: 3rem;
-}
-#footer hr {
-  color: #ccc;
-}
-#footer h4 {
-  font-size: 1.8rem;
-}
-#footer strong {
-  color: #ffe727;
-}
-#footer a {
-  color: #fff;
-  font-weight: bold;
-}
-#footer a:hover {
-  text-decoration: underline;
-}
-#footer ul {
-  padding: 0;
-}
-#footer ul li {
-  font-size: 1.8rem;
-  margin-right: 1rem;
-}
-
-@media screen and (min-width: 480px) {
-  #footer ul {
-    list-style-type: none;
-  }
-  #footer ul, #footer ul li {
-    margin: 0;
-    padding: 0;
-    display: inline;
-  }
-  #footer ul li {
-    font-size: 1.8rem;
-    margin-right: 1rem;
-  }
-  #footer ul li + li::before {
-    padding-right: 1rem;
-    content: "»";
-  }
-}
-@media screen and (max-width: 480px) {
-  #footer ul {
-    list-style-image: none;
-    list-style-type: none;
-    margin-left: 0;
-  }
-  #footer .row:last-child {
-    margin-top: 0.8rem;
-  }
-}
 blockquote {
   margin: 0;
   margin-left: 0.5rem;
