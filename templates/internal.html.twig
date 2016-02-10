@@ -1,1 +1,11 @@
-{% extends 'partials/internal.html.twig' %}
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<div class="container internal">
+    <div class="row">
+        {{ sections.left }}
+        {{ sections.main }}
+        {{ sections.right }}
+    </div>
+</div>
+{% endblock %}

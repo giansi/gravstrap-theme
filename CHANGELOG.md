@@ -1,3 +1,9 @@
+# v1.0.0-beta.2
+## 02/10/2016
+
+1. [](#bugfix)
+    * removed the partials/internal.html.twig template and moved contents to internal.html.twig
+
 # v1.0.0-beta.1
 ## 02/09/2016
 
