@@ -1,3 +1,12 @@
+# v1.0.0-RC
+## 02/20/2016
+
+1. [](#improved)
+    * added carousel header page
+    * added single page web site
+    * added pages to render all the Gravstrap shortcodes and to show their definition
+    * added a page to show how to render Gravstrap components using their templates
+
 # v1.0.0-beta.2
 ## 02/10/2016
 

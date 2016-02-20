@@ -366,6 +366,40 @@ a:hover {
   color: #fff;
 }
 
+.jumbotron .btn {
+  margin-top: 5rem;
+}
+
+.jumbotron a:hover {
+  background-color: #fff;
+}
+
+.jumbotron a:active {
+  color: #fff;
+}
+
+.btn-outline-inverse {
+  color: #fff;
+  background-color: transparent;
+  border-color: #cdbfe3;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.header .navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+@media screen and (max-width: 550px) {
+  .navbar-right {
+    padding-left: 6px;
+  }
+  .navbar-right li {
+    float: left;
+  }
+}
 @media screen and (max-width: 900px) {
   .navbar {
     padding: 0.5rem !important;

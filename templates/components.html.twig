@@ -1,0 +1,18 @@
+{% embed 'partials/base.html.twig' %}
+    {% block header %}
+    <header id="header">
+        {{ jumbotron1 }}
+        {{ navbar1 }}
+    </header>
+    {% endblock %}
+
+    {% block content %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                {{ content }}
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+{% endembed %}

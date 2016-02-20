@@ -1,15 +1,10 @@
 {% embed 'partials/base.html.twig' %}
     {% block header %}
-    <header id="header">
-        {{ jumbotron1 }}
-        {{ navbar2 }}
-    </header>
     {% endblock %}
 
     {% block content %}
     {% for module in page.collection() %}
         {{ module.content }}
     {% endfor %}
-
     {% endblock %}
 {% endembed %}

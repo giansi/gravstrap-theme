@@ -3,9 +3,18 @@
 {% block content %}
 <div class="container internal">
     <div class="row">
-        {{ sections.left }}
-        {{ sections.main }}
-        {{ sections.right }}
+        {% set attributes = parse_attributes(left.object.attributes) %}
+        <div {% include 'partials/_attributes.html.twig' %}>
+        {{ left.object.content }}
+        </div>
+        {% set attributes = parse_attributes(main.object.attributes) %}
+        <div {% include 'partials/_attributes.html.twig' %}>
+        {{ main.object.content }}
+        </div>
+        {% set attributes = parse_attributes(right.object.attributes) %}
+        <div {% include 'partials/_attributes.html.twig' %}>
+        {{ right.object.content }}
+        </div>
     </div>
 </div>
 {% endblock %}

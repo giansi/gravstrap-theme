@@ -1,0 +1,253 @@
+{% embed 'partials/base.html.twig' %}
+    {% block header %}
+    <header id="header">
+        {{ jumbotron1 }}
+        {{ navbar1 }}
+    </header>
+    {% endblock %}
+
+    {% block content %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    {{ content }}<br />
+                    <h2>Accordion</h2>
+                    {% include 'bootstrap/accordion.html.twig' with accordion %}
+                    <p>This component can also be dynamically filled with data provided by a json file or fetched from a database. You will provide an array similar to the following one:</p>
+<pre><code>$accordion = array(
+    'id' => 'accordion1',
+    'name' => 'accordion1',            
+    'items' => array(
+        array(
+            'id' => 'accordion_item1',
+            'header_id' => 'accordion_item1',
+            'title' => 'An awesome title',
+            'content' => 'Anim pariatur cliche reprehenderit enim eiusmod high life accusamus terry richardson ad squid.',
+        ),
+        array(
+            'id' => 'accordion_item2',
+            'header_id' => 'accordion_item2',
+            'title' => 'Another awesome title',
+            'content' => '3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.',
+        ),
+    ),
+);
+$this->grav['twig']->twig_vars['accordion'] = $accordion;
+</code></pre>
+                    <p>Then render it in your theme as follows:</p>
+                    <pre><code>{% verbatim %}{% include 'bootstrap/accordion.html.twig' with accordion %}{% endverbatim %}</code></pre>         
+                    
+                    
+                    <h2>Alert</h2>
+                    {% include 'bootstrap/alert.html.twig' with alert %}
+                    
+                    <p>This component can also be dynamically filled with data provided by a json file or fetched from a database. You will provide an array similar to the following one:</p>
+<pre><code>$alert = array(
+    'name' => 'alert1',  
+    'type' => 'warning',            
+    'attributes' => 'class:my-class,rel:my-rel',
+    'content' => 'Anim pariatur cliche reprehenderit enim eiusmod high life accusamus terry richardson ad squid.',
+);
+$this->grav['twig']->twig_vars['alert'] = $alert;
+</code></pre>
+                    <p>Then render it in your theme as follows:</p>
+                    <pre><code>{% verbatim %}{% include 'bootstrap/alert.html.twig' with alert %}{% endverbatim %}</code></pre>         
+                    
+                    <h2>Carousel</h2>
+                    {% include 'bootstrap/carousel.html.twig' with carousel %}
+                    
+                    <p>This component can also be dynamically filled with data provided by a json file or fetched from a database. You will provide an array similar to the following one:</p>
+<pre><code>$carousel = array(
+    'id' => 'carousel1',
+    'name' => 'carousel1',
+    'previous_label' => 'Prev',
+    'next_label' => 'Next',            
+    'items' => array(
+        array(
+            'image' => 'image1.jpg',
+            'caption' => 'First image caption',
+        ),
+        array(
+            'image' => 'image2.jpg',
+            'caption' => 'Second image caption',
+        ),
+        array(
+            'image' => 'image3.jpg',
+            'caption' => 'Third image caption',
+        ),
+    ),
+);
+$this->grav['twig']->twig_vars['carousel'] = $carousel;
+</code></pre>
+                    <p>Then render it in your theme as follows:</p>
+                    <pre><code>{% verbatim %}{% include 'bootstrap/carousel.html.twig' with carousel %}{% endverbatim %}</code></pre>         
+                    
+                    <h2>Jumbotron</h2>
+                    {% include 'bootstrap/jumbotron.html.twig' with jumbotron %}
+                    
+                    <p>This component can also be dynamically filled with data provided by a json file or fetched from a database. You will provide an array similar to the following one:</p>
+<pre><code>$jumbotron = array(
+    'name' => 'jumbotron1',
+    'image' => 'image1.jpg',
+    'fullwidth' => true,            
+    'attributes' => 'class:my-class,rel:my-rel',
+    'content' => 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.',
+);
+$this->grav['twig']->twig_vars['jumbotron'] = $jumbotron;
+</code></pre>
+                    <p>Then render it in your theme as follows:</p>
+                    <pre><code>{% verbatim %}{% include 'bootstrap/jumbotron.html.twig' with jumbotron %}{% endverbatim %}</code></pre>         
+                    
+                    <h2>List group</h2>
+                    {% include 'bootstrap/listgroup.html.twig' with list_group %}
+                    
+                    <p>This component can also be dynamically filled with data provided by a json file or fetched from a database. You will provide an array similar to the following one:</p>
+<pre><code>$listGroup = array(
+    'name' => 'listgroup1',           
+    'items' => array(
+        array(
+            'badge' => '12',
+            'active' => true,        
+            'attributes' => 'class:my-class,rel:my-rel',
+            'content' => 'Cras mattis consectetur purus sit amet fermentum.',
+        ),
+        array(
+            'badge' => '15',
+            'content' => 'Cras mattis consectetur purus sit amet fermentum.',
+        ),
+        array(
+            'disabled' => true,
+            'content' => 'Cras mattis consectetur purus sit amet fermentum.',
+        ),
+        array(
+            'badge' => '12',
+            'type' => 'success',
+            'content' => 'Cras mattis consectetur purus sit amet fermentum.',
+        ),
+    ),
+);
+$this->grav['twig']->twig_vars['list_group'] = $listGroup;
+</code></pre>
+                    <p>Then render it in your theme as follows:</p>
+                    <pre><code>{% verbatim %}{% include 'bootstrap/listgroup.html.twig' with list_group %}{% endverbatim %}</code></pre>         
+                    
+                    <h2>Page header</h2>
+                    {% include 'bootstrap/pageheader.html.twig' with page_header %}
+                    <p>This component can also be dynamically filled with data provided by a json file or fetched from a database. You will provide an array similar to the following one:</p>
+<pre><code>$pageHeader = array(
+    'name' => 'pageheader1',
+    'title' => 'Title',
+    'subtitle' => 'Subtitle',            
+    'attributes' => 'class:my-class,rel:my-rel',
+);
+$this->grav['twig']->twig_vars['page_header'] = $pageHeader;
+</code></pre>
+                    <p>Then render it in your theme as follows:</p>
+                    <pre><code>{% verbatim %}{% include 'bootstrap/pageheader.html.twig' with page_header %}{% endverbatim %}</code></pre>         
+                    <h2>Panel</h2>
+                    {% include 'bootstrap/panel.html.twig' with panel %}
+                    
+                    <p>This component can also be dynamically filled with data provided by a json file or fetched from a database. You will provide an array similar to the following one:</p>
+<pre><code>$panel = array(
+    'name' => 'panel1',
+    'heading_title' => 'Title',
+    //'footer_title' => Footer title,            
+    'type' => 'danger',
+    'content' => 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.',
+);
+$this->grav['twig']->twig_vars['panel'] = $panel;
+</code></pre>
+                    <p>Then render it in your theme as follows:</p>
+                    <pre><code>{% verbatim %}{% include 'bootstrap/panel.html.twig' with panel %}{% endverbatim %}</code></pre>         
+                    
+                    <h2>Progressbar</h2>
+                    {% include 'bootstrap/progressbar.html.twig' with progressbar %}
+                    
+                    <p>This component can also be dynamically filled with data provided by a json file or fetched from a database. You will provide an array similar to the following one:</p>
+<pre><code>$progressbar = array(
+    'name' => 'progressbar1',
+    'label' => 'PHP',
+    'type' => 'success',
+    //'striped' => true,
+    //'animated' => true,
+    'value' => 80,
+    'min' => 0,
+    'max' => 100,
+    'attributes' => 'class:my-class,rel:my-rel',
+);
+$this->grav['twig']->twig_vars['progressbar'] = $progressbar;
+</code></pre>
+                    <p>Then render it in your theme as follows:</p>
+                    <pre><code>{% verbatim %}{% include 'bootstrap/progressbar.html.twig' with progressbar %}{% endverbatim %}</code></pre>         
+                    
+                    <h2>Tabs</h2>
+                    {% include 'bootstrap/tab.html.twig' with tab %}<br />
+                    
+                    <p>This component can also be dynamically filled with data provided by a json file or fetched from a database. You will provide an array similar to the following one:</p>
+<pre><code>$tab = array(
+    'name' => 'tab1',           
+    'items' => array(
+        array(
+            'name' => 'tab_item1',
+            'attributes' => 'class:my-class,rel:my-rel',
+            'content' => 'Cras mattis consectetur purus sit amet fermentum.',
+        ),
+        array(
+            'name' => 'tab_item2',
+            'content' => 'Cras mattis consectetur purus sit amet fermentum.',
+        ),
+    ),
+);
+$this->grav['twig']->twig_vars['tab'] = $tab;
+</code></pre>
+                    <p>Then render it in your theme as follows:</p>
+                    <pre><code>{% verbatim %}{% include 'bootstrap/tab.html.twig' with tab %}{% endverbatim %}</code></pre>         
+                    
+                    <h2>Thumbnail</h2>
+                    {% include 'bootstrap/thumbnail.html.twig' with thumbnail %}
+                    
+                    <p>This component can also be dynamically filled with data provided by a json file or fetched from a database. You will provide an array similar to the following one:</p>
+<pre><code>$thumbnail = array(
+    'name' => 'thumbnail1',           
+    'items' => array(
+        array(
+            'image' => 'image1.jpg',
+            'url' => 'http://diblas.net',
+            //'content' => 'Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+        ),
+        array(
+            'image' => 'image2.jpg',
+            'url' => 'http://diblas.net',
+            //'content' => 'Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+        ),
+        array(
+            'image' => 'image3.jpg',
+            'url' => 'http://diblas.net',
+            //'content' => 'Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+        ),
+    ),
+);
+$this->grav['twig']->twig_vars['thumbnail'] = $thumbnail;
+</code></pre>
+                    <p>Then render it in your theme as follows:</p>
+                    <pre><code>{% verbatim %}{% include 'bootstrap/thumbnail.html.twig' with thumbnail %}{% endverbatim %}</code></pre>         
+                    
+                    <h2>Well</h2>
+                    {% include 'bootstrap/well.html.twig' with well %}
+                    
+                    <p>This component can also be dynamically filled with data provided by a json file or fetched from a database. You will provide an array similar to the following one:</p>
+<pre><code>$well = array(
+    'name' => 'pageheader1',
+    'size' => 'large',            
+    'attributes' => 'class:my-class,rel:my-rel',
+    'content' => 'Cras mattis consectetur purus sit amet fermentum.',
+);
+$this->grav['twig']->twig_vars['well'] = $well;
+</code></pre>
+                    <p>Then render it in your theme as follows:</p>
+                    <pre><code>{% verbatim %}{% include 'bootstrap/well.html.twig' with well %}{% endverbatim %}</code></pre>         
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+{% endembed %}
