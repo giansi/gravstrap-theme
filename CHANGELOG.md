@@ -1,3 +1,8 @@
+# v1.0.0-RC.1
+## 02/20/2016
+1. [](#improved)
+    * changed screenshot
+
 # v1.0.0-RC
 ## 02/20/2016
 
