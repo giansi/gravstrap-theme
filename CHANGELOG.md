@@ -1,9 +1,14 @@
-# v1.0.0-RC.1
+# v1.0.0-rc.2
+## 02/23/2016
+1. [](#bugfix)
+    * fixed jumbotron big buttons rendering for small devices
+
+# v1.0.0-rc.1
 ## 02/20/2016
 1. [](#improved)
     * changed screenshot
 
-# v1.0.0-RC
+# v1.0.0-rc
 ## 02/20/2016
 
 1. [](#improved)
