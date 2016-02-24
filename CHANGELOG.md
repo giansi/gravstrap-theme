@@ -1,3 +1,8 @@
+# v1.0.0-rc.3
+## 02/24/2016
+1. [](#improved)
+    * updated demo pages
+
 # v1.0.0-rc.2
 ## 02/23/2016
 1. [](#bugfix)
