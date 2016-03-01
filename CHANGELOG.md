@@ -1,3 +1,8 @@
+# v1.0.0
+## 03/01/2016
+1.[](#improved)  
+    * fixed one demo header to use the new 'g-' shortcode alias
+
 # v1.0.0-rc.3
 ## 02/24/2016
 1. [](#improved)
