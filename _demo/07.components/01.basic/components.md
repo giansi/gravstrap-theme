@@ -9,12 +9,12 @@ highlight:
 ---
 
 
-[gravstrap-jumbotron name="jumbotron1" fullwidth="true" image="bg.jpg" render=false]
+[g-jumbotron name="jumbotron1" fullwidth="true" image="bg.jpg" render=false]
 # Basic components
 
 Gravstrap plugin implements some basic components, like links, icons and buttons you can use on their own or to build complex components like social menus.
 
-[/gravstrap-jumbotron]
+[/g-jumbotron]
 
 # Basic components for Grav CMS
 A comprehensive list of all the basic components, you can use for free as shortcodes in your website.
@@ -22,22 +22,22 @@ A comprehensive list of all the basic components, you can use for free as shortc
 
 ## Button
 
-[gravstrap-button button_type="primary" button_label="Primary"][/gravstrap-button]
-[gravstrap-button button_type="success" button_label="Success"][/gravstrap-button]
-[gravstrap-button button_type="info" button_label="Info"][/gravstrap-button]
-[gravstrap-button button_type="warning" button_label="Warning"][/gravstrap-button]
-[gravstrap-button button_type="danger" button_label="Danger"][/gravstrap-button]
-[gravstrap-button button_type="link" button_label="Link"][/gravstrap-button]
+[g-button button_type="primary" button_label="Primary"][/g-button]
+[g-button button_type="success" button_label="Success"][/g-button]
+[g-button button_type="info" button_label="Info"][/g-button]
+[g-button button_type="warning" button_label="Warning"][/g-button]
+[g-button button_url="http://diblas.net" button_type="danger" button_label="Danger"][/g-button]
+[g-button button_type="link" button_label="Link"][/g-button]
 
 #### Code definition
 
     [raw]
-    [gravstrap-button button_type="primary" button_label="Primary"][/gravstrap-button]
-    [gravstrap-button button_type="success" button_label="Success"][/gravstrap-button]
-    [gravstrap-button button_type="info" button_label="Info"][/gravstrap-button]
-    [gravstrap-button button_type="warning" button_label="Warning"][/gravstrap-button]
-    [gravstrap-button button_type="danger" button_label="Danger"][/gravstrap-button]
-    [gravstrap-button button_type="link" button_label="Link"][/gravstrap-button]
+    [g-button button_type="primary" button_label="Primary"][/g-button]
+    [g-button button_type="success" button_label="Success"][/g-button]
+    [g-button button_type="info" button_label="Info"][/g-button]
+    [g-button button_type="warning" button_label="Warning"][/g-button]
+    [g-button button_url="http://diblas.net" button_type="danger" button_label="Danger"][/g-button]
+    [g-button button_type="link" button_label="Link"][/g-button]
     [/raw]
 
 ___
@@ -46,28 +46,28 @@ ___
 
 By default **Icon shortcode** renders a Glyphicon icon:
 
-[gravstrap-icon icon=envelope][/gravstrap-icon]
+[g-icon icon=envelope][/g-icon]
 
 #### Code definition
 
     [raw]
-    [gravstrap-icon icon=envelope][/gravstrap-icon]
+    [g-icon icon=envelope][/g-icon]
     [/raw]
 
 You can use **Fontawesome** just adding the `icon_type="fontawesome"` property.
 
-[gravstrap-icon icon=twitter icon_type="fontawesome"][/gravstrap-icon]
-[gravstrap-icon icon=twitter icon_type="fontawesome" icon_attributes="class:fa-2x"][/gravstrap-icon]
-[gravstrap-icon icon=twitter icon_type="fontawesome" icon_attributes="class:fa-3x"][/gravstrap-icon]
-[gravstrap-icon icon=twitter icon_type="fontawesome" icon_attributes="class:fa-4x"][/gravstrap-icon]
+[g-icon icon=twitter icon_type="fontawesome"][/g-icon]
+[g-icon icon=twitter icon_type="fontawesome" icon_attributes="class:fa-2x"][/g-icon]
+[g-icon icon=twitter icon_type="fontawesome" icon_attributes="class:fa-3x"][/g-icon]
+[g-icon icon=twitter icon_type="fontawesome" icon_attributes="class:fa-4x"][/g-icon]
 
 #### Code definition
 
     [raw]
-    [gravstrap-icon icon=twitter icon_type="fontawesome"][/gravstrap-icon]
-    [gravstrap-icon icon=twitter icon_type="fontawesome" icon_attributes="class:fa-2x"][/gravstrap-icon]
-    [gravstrap-icon icon=twitter icon_type="fontawesome" icon_attributes="class:fa-3x"][/gravstrap-icon]
-    [gravstrap-icon icon=twitter icon_type="fontawesome" icon_attributes="class:fa-4x"][/gravstrap-icon]
+    [g-icon icon=twitter icon_type="fontawesome"][/g-icon]
+    [g-icon icon=twitter icon_type="fontawesome" icon_attributes="class:fa-2x"][/g-icon]
+    [g-icon icon=twitter icon_type="fontawesome" icon_attributes="class:fa-3x"][/g-icon]
+    [g-icon icon=twitter icon_type="fontawesome" icon_attributes="class:fa-4x"][/g-icon]
     [/raw]
 
 
@@ -78,36 +78,121 @@ ___
 
 ## Stacked icons
 
-[gravstrap-icon-stacked icon=twitter][/gravstrap-icon-stacked]
-[gravstrap-icon-stacked icon=twitter large_icon=true][/gravstrap-icon-stacked]
+[g-icon-stacked icon=twitter][/g-icon-stacked]
+[g-icon-stacked icon=twitter large_icon=true][/g-icon-stacked]
 <br />
-[gravstrap-icon-stacked icon=twitter icon_container="square-o"][/gravstrap-icon-stacked]
-[gravstrap-icon-stacked icon=twitter icon_container="square-o" large_icon=true][/gravstrap-icon-stacked]
+[g-icon-stacked icon=twitter icon_container="square-o"][/g-icon-stacked]
+[g-icon-stacked icon=twitter icon_container="square-o" large_icon=true][/g-icon-stacked]
 
 #### Code definition
 
     [raw]
-    [gravstrap-icon-stacked icon=twitter][/gravstrap-icon-stacked]
-    [gravstrap-icon-stacked icon=twitter large_icon=true][/gravstrap-icon-stacked]
-    [gravstrap-icon-stacked icon=twitter icon_container="square-o"][/gravstrap-icon-stacked]
-    [gravstrap-icon-stacked icon=twitter icon_container="square-o" large_icon=true][/gravstrap-icon-stacked]
+    [g-icon-stacked icon=twitter][/g-icon-stacked]
+    [g-icon-stacked icon=twitter large_icon=true][/g-icon-stacked]
+    [g-icon-stacked icon=twitter icon_container="square-o"][/g-icon-stacked]
+    [g-icon-stacked icon=twitter icon_container="square-o" large_icon=true][/g-icon-stacked]
     [/raw]
 
 ___
 
 ## Link
 
-[gravstrap-link url="http://diblas.net" menu="Simple link"][/gravstrap-link]
-[gravstrap-link url="http://diblas.net" menu="Glyphicon link" icon=envelope][/gravstrap-link]
-[gravstrap-link url="http://diblas.net" menu="Fontawesome link" icon_type="fontawesome" icon=twitter][/gravstrap-link]
-[gravstrap-link url="http://diblas.net" menu="Fontawesome stacked icon link" icon_type="fontawesome" icon=twitter stacked=true][/gravstrap-link]
-[gravstrap-link url="http://diblas.net" menu="Fontawesome stacked icon link" icon_type="fontawesome" icon=twitter icon_container="square-o" stacked=true][/gravstrap-link]
+[g-link url="http://diblas.net" menu="Simple link"][/g-link]
+[g-link url="http://diblas.net" menu="Glyphicon link" icon=envelope][/g-link]
+[g-link url="http://diblas.net" menu="Fontawesome link" icon_type="fontawesome" icon=twitter][/g-link]
+[g-link url="http://diblas.net" menu="Fontawesome stacked icon link" icon_type="fontawesome" icon=twitter stacked=true][/g-link]
+[g-link url="http://diblas.net" menu="Fontawesome stacked icon link" icon_type="fontawesome" icon=twitter icon_container="square-o" stacked=true][/g-link]
 
 #### Code definition
 
     [raw]
-    [gravstrap-link url="http://diblas.net" menu="Simple link"][/gravstrap-link]
-    [gravstrap-link url="http://diblas.net" menu="Glyphicon link" icon=envelope][/gravstrap-link]
-    [gravstrap-link url="http://diblas.net" menu="Fontawesome link" icon_type="fontawesome" icon=twitter][/gravstrap-link]
-    [gravstrap-link url="http://diblas.net" menu="Fontawesome stacked icon link" icon_type="fontawesome" icon=twitter stacked=true][/gravstrap-link][gravstrap-link url="http://diblas.net" menu="Fontawesome stacked icon link" icon_type="fontawesome" icon=twitter icon_container="square-o" stacked=true][/gravstrap-link]
+    [g-link url="http://diblas.net" menu="Simple link"][/g-link]
+    [g-link url="http://diblas.net" menu="Glyphicon link" icon=envelope][/g-link]
+    [g-link url="http://diblas.net" menu="Fontawesome link" icon_type="fontawesome" icon=twitter][/g-link]
+    [g-link url="http://diblas.net" menu="Fontawesome stacked icon link" icon_type="fontawesome" icon=twitter stacked=true][/g-link][g-link url="http://diblas.net" menu="Fontawesome stacked icon link" icon_type="fontawesome" icon=twitter icon_container="square-o" stacked=true][/g-link]
+    [/raw]
+
+___
+
+## List
+
+A list that can be styled. Here's some examples:
+
+#### Unordered list
+
+[g-list attributes="class:my-class"]
+[g-list-item attributes="class:li-class"]Item 1[/g-list-item]
+[g-list-item]Item 2[/g-list-item]
+[g-list-item]Item 3[/g-list-item]
+[/g-list]
+
+#### Code definition
+
+    [raw]
+    [g-list attributes="class:my-class"]
+    [g-list-item attributes="class:li-class"]Item 1[/g-list-item]
+    [g-list-item]Item 2[/g-list-item]
+    [g-list-item]Item 3[/g-list-item]
+    [/g-list]
+    [/raw]
+
+
+#### Ordered list
+
+[g-list attributes="class:my-class"  tag="ol"]
+[g-list-item attributes="class:li-class"]Item 1[/g-list-item]
+[g-list-item]Item 2[/g-list-item]
+[g-list-item]Item 3[/g-list-item]
+[/g-list]
+
+#### Code definition
+
+    [raw]
+    [g-list attributes="class:my-class"  tag="ol"]
+    [g-list-item attributes="class:li-class"]Item 1[/g-list-item]
+    [g-list-item]Item 2[/g-list-item]
+    [g-list-item]Item 3[/g-list-item]
+    [/g-list]
+    [/raw]
+
+#### List of gravstrap links
+
+[g-list attributes="class:my-class"]
+    [g-list-item]
+        [g-link url="https://twitter.com/giansi72" icon="twitter" icon_type="fontawesome" attributes="class:puto"][/g-link]
+    [/g-list-item]
+    [g-list-item attributes="class:li-class"]
+        [g-link url="https://www.facebook.com/diblas.net" icon="facebook" icon_type="fontawesome"][/g-link]
+    [/g-list-item]
+    [g-list-item]
+        [g-link url="https://github.com/giansi" icon="github" icon_type="fontawesome"][/g-link]
+    [/g-list-item]
+    [g-list-item]
+        [g-link url="http://www.stumbleupon.com/stumbler/Giansimon" icon="stumbleupon" icon_type="fontawesome"][/g-link]
+    [/g-list-item]
+    [g-list-item]
+        [g-link url="http://feeds.feedburner.com/diblas" icon="rss" icon_type="fontawesome"][/g-link]
+    [/g-list-item]
+[/g-list]
+
+#### Code definition
+
+    [raw]
+    [g-list attributes="class:my-class"]
+        [g-list-item]
+            [g-link url="https://twitter.com/giansi72" icon="twitter" icon_type="fontawesome" attributes="class:puto"][/g-link]
+        [/g-list-item]
+        [g-list-item attributes="class:li-class"]
+            [g-link url="https://www.facebook.com/diblas.net" icon="facebook" icon_type="fontawesome"][/g-link]
+        [/g-list-item]
+        [g-list-item]
+            [g-link url="https://github.com/giansi" icon="github" icon_type="fontawesome"][/g-link]
+        [/g-list-item]
+        [g-list-item]
+            [g-link url="http://www.stumbleupon.com/stumbler/Giansimon" icon="stumbleupon" icon_type="fontawesome"][/g-link]
+        [/g-list-item]
+        [g-list-item]
+            [g-link url="http://feeds.feedburner.com/diblas" icon="rss" icon_type="fontawesome"][/g-link]
+        [/g-list-item]
+    [/g-list]
     [/raw]

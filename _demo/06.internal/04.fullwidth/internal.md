@@ -6,7 +6,7 @@ slug: fullwidth-template
 
 ---
 
-[gravstrap-section-extended name=main attributes="class:col-md-12"]
+[g-section-extended name=main attributes="class:col-md-12"]
 # Main contents
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in porta lacus, vel laoreet magna. Cras vitae sem nec felis luctus sollicitudin. Donec eleifend ullamcorper purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent consectetur auctor dui in suscipit. Duis orci metus, iaculis quis faucibus sit amet, hendrerit laoreet nisl. Morbi dignissim tincidunt blandit. Curabitur non egestas nisl, sit amet eleifend neque. Ut a risus id lorem lacinia pellentesque. Morbi ornare est ante, nec euismod ligula laoreet pharetra. Curabitur eu egestas quam. Proin risus ipsum, rutrum eu feugiat id, gravida ut justo. Phasellus laoreet turpis non mi pulvinar, quis viverra lorem egestas. Aliquam scelerisque mauris nec dui viverra molestie. Cras pretium enim ac accumsan molestie. Nulla facilisi.
@@ -16,4 +16,4 @@ Cras facilisis sit amet quam eu euismod. Pellentesque mauris ipsum, malesuada et
 Nam in magna at lectus rhoncus suscipit eget et metus. Maecenas porta mauris in massa viverra luctus. Aliquam facilisis porta nisl, quis sagittis diam rutrum a. Proin sed dictum neque, in gravida lorem. Quisque massa neque, facilisis vel sem nec, dapibus suscipit purus. Sed sollicitudin malesuada urna eget ultrices. Phasellus viverra risus et risus porta, eget malesuada nisl elementum.
 
 Donec sit amet ante nulla. Morbi nec diam lorem. Aliquam in efficitur elit. Duis et feugiat nulla. Vestibulum ut ipsum ut elit vehicula auctor. Quisque sagittis purus et tellus cursus efficitur. Duis vel leo ut lorem tincidunt vehicula ac non ipsum. Mauris cursus diam eleifend odio faucibus, vel porta metus malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sed bibendum lorem, sed bibendum sapien. Phasellus aliquet pulvinar tincidunt. Quisque non pretium mauris, malesuada tempus ligula.
-[/gravstrap-section-extended]
+[/g-section-extended]

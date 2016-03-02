@@ -42,11 +42,11 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 [section name=skills]
 ### Skills
 
-[gravstrap-progressbar label="Php" type="success" value="80" min="0" max="100" render=true][/gravstrap-progressbar]
-[gravstrap-progressbar label="Mysql" type="success" value="80" min="0" max="100" render=true][/gravstrap-progressbar]
-[gravstrap-progressbar label="Javascript" type="success" value="90" min="0" max="100" render=true][/gravstrap-progressbar]
-[gravstrap-progressbar label="Jquery" type="success" value="90" min="0" max="100" render=true][/gravstrap-progressbar]
-[gravstrap-progressbar label="Css" type="success" value="90" min="0" max="100" render=true][/gravstrap-progressbar]
-[gravstrap-progressbar label="Photoshop" type="warning" value="60" min="0" max="100" render=true][/gravstrap-progressbar]
-[gravstrap-progressbar label="Git" type="success" value="80" min="0" max="100" render=true][/gravstrap-progressbar]
+[g-progressbar label="Php" type="success" value="80" min="0" max="100" render=true][/g-progressbar]
+[g-progressbar label="Mysql" type="success" value="80" min="0" max="100" render=true][/g-progressbar]
+[g-progressbar label="Javascript" type="success" value="90" min="0" max="100" render=true][/g-progressbar]
+[g-progressbar label="Jquery" type="success" value="90" min="0" max="100" render=true][/g-progressbar]
+[g-progressbar label="Css" type="success" value="90" min="0" max="100" render=true][/g-progressbar]
+[g-progressbar label="Photoshop" type="warning" value="60" min="0" max="100" render=true][/g-progressbar]
+[g-progressbar label="Git" type="success" value="80" min="0" max="100" render=true][/g-progressbar]
 [/section]

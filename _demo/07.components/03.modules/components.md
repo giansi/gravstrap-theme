@@ -36,12 +36,12 @@ highlight:
     theme: ir_black
 ---
 
-[gravstrap-jumbotron name="jumbotron1" fullwidth="true" image="bg.jpg" render=false]
+[g-jumbotron name="jumbotron1" fullwidth="true" image="bg.jpg" render=false]
 # Modules shortcodes
 
 Gravstrap plugin implements several modules you can use as shortcodes to simplify the web site building: watch them in action down in this page.
 
-[/gravstrap-jumbotron]
+[/g-jumbotron]
 
 
 
@@ -51,62 +51,62 @@ A comprehensive list of all the modules you can use for free as shortcodes in yo
 
 ## Clients module
 
-[gravstrap-clients name=clients attributes="class:clients module"]
+[g-clients name=clients attributes="class:clients module"]
 
 ## Show out the clients who trust your business
 Use the `Clients module` to show your customers, the clients who already trust your business
 
 ___
 
-[gravstrap-clients-item image="apple.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-[gravstrap-clients-item image="canon.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-[gravstrap-clients-item image="forbes.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-[gravstrap-clients-item image="hp.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-[gravstrap-clients-item image="intel.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-[gravstrap-clients-item image="samsung.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-[gravstrap-clients-item image="siemens.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-[gravstrap-clients-item image="vaio.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
+[g-clients-item image="apple.svg" attributes="class:col-md-3"][/g-clients-item]
+[g-clients-item image="canon.svg" attributes="class:col-md-3"][/g-clients-item]
+[g-clients-item image="forbes.svg" attributes="class:col-md-3"][/g-clients-item]
+[g-clients-item image="hp.svg" attributes="class:col-md-3"][/g-clients-item]
+[g-clients-item image="intel.svg" attributes="class:col-md-3"][/g-clients-item]
+[g-clients-item image="samsung.svg" attributes="class:col-md-3"][/g-clients-item]
+[g-clients-item image="siemens.svg" attributes="class:col-md-3"][/g-clients-item]
+[g-clients-item image="vaio.svg" attributes="class:col-md-3"][/g-clients-item]
 
-[/gravstrap-clients]
+[/g-clients]
 
 #### Code definition
 
     [raw]
-    [gravstrap-clients name=clients attributes="class:clients module"]
+    [g-clients name=clients attributes="class:clients module"]
 
     ## Show out the clients who trust your business
     Use the `Clients module` to show your customers, the clients who already trust your business
 
     ___
 
-    [gravstrap-clients-item image="apple.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-    [gravstrap-clients-item image="canon.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-    [gravstrap-clients-item image="forbes.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-    [gravstrap-clients-item image="hp.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-    [gravstrap-clients-item image="intel.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-    [gravstrap-clients-item image="samsung.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-    [gravstrap-clients-item image="siemens.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
-    [gravstrap-clients-item image="vaio.svg" attributes="class:col-md-3"][/gravstrap-clients-item]
+    [g-clients-item image="apple.svg" attributes="class:col-md-3"][/g-clients-item]
+    [g-clients-item image="canon.svg" attributes="class:col-md-3"][/g-clients-item]
+    [g-clients-item image="forbes.svg" attributes="class:col-md-3"][/g-clients-item]
+    [g-clients-item image="hp.svg" attributes="class:col-md-3"][/g-clients-item]
+    [g-clients-item image="intel.svg" attributes="class:col-md-3"][/g-clients-item]
+    [g-clients-item image="samsung.svg" attributes="class:col-md-3"][/g-clients-item]
+    [g-clients-item image="siemens.svg" attributes="class:col-md-3"][/g-clients-item]
+    [g-clients-item image="vaio.svg" attributes="class:col-md-3"][/g-clients-item]
 
-    [/gravstrap-clients]
+    [/g-clients]
     [/raw]
 
 ___
 
 ## Contacts map module
 
-[gravstrap-contacts-map name=_contact_map attributes="class:where-we-are module" info_attributes="class:col-md-4" map_attributes="class:col-md-8"]
+[g-contacts-map name=_contact_map attributes="class:where-we-are module" info_attributes="class:col-md-4" map_attributes="class:col-md-8"]
 
 ## Show your customers your position and how they can contact you
 Use the `Contact map` module to tell your customers position and how they can get in touch with you.
 
 ___
 
-[gravstrap-section name="map"]
+[g-section name="map"]
 [GOOGLEMAPS:contactmap]
-[/gravstrap-section]
+[/g-section]
 
-[gravstrap-section name="info"]
+[g-section name="info"]
 #####OFFICE
 
 9 - 3815 Thatcher Avenue  
@@ -124,24 +124,24 @@ S7R 1A3
 
 Monday - Friday 8 am - 5 pm  
 Saturday - Sunday Closed  
-[/gravstrap-section]
-[/gravstrap-contacts-map]
+[/g-section]
+[/g-contacts-map]
 
 #### Code definition
 
     [raw]
-    [gravstrap-contacts-map name=_contact_map attributes="class:where-we-are module" info_attributes="class:col-md-4" map_attributes="class:col-md-8"]
+    [g-contacts-map name=_contact_map attributes="class:where-we-are module" info_attributes="class:col-md-4" map_attributes="class:col-md-8"]
 
     ## Show your customers your position and how they can contact you
     Use the `Contact map` module to tell your customers position and how they can get in touch with you.
 
     ___
 
-    [gravstrap-section name="map"]
+    [g-section name="map"]
     {GOOGLEMAPS:contactmap}
-    [/gravstrap-section]
+    [/g-section]
 
-    [gravstrap-section name="info"]
+    [g-section name="info"]
     #####OFFICE
 
     9 - 3815 Thatcher Avenue  
@@ -159,8 +159,8 @@ Saturday - Sunday Closed
 
     Monday - Friday 8 am - 5 pm  
     Saturday - Sunday Closed  
-    [/gravstrap-section]
-    [/gravstrap-contacts-map]
+    [/g-section]
+    [/g-contacts-map]
     [/raw]
 
 >>> Please note that `GOOGLEMAPS` definition must be surrounded by **[ ]** instead of **{ }**: that was only a rendering trick.
@@ -169,21 +169,21 @@ ___
 
 ## Contacts module
 
-[gravstrap-contacts name=contacts attributes="class:module contacts" info_attributes="class:col-md-4" form_attributes="class:col-md-8"]
+[g-contacts name=contacts attributes="class:module contacts" info_attributes="class:col-md-4" form_attributes="class:col-md-8"]
 
 ## Let your customers contact you
 Use the Contact module to let your customers contact you
 
 ___
 
-[gravstrap-section name="form"]
+[g-section name="form"]
 ##### Get in touch
 Need some information? Ask us a question filling the form below
 
-[gravstrap-simple-form token="xxxxx" redirect_to="/thank-you-for-my-page" render=true][/gravstrap-simple-form]
-[/gravstrap-section]
+[g-simple-form token="xxxxx" redirect_to="/thank-you-for-my-page" render=true][/g-simple-form]
+[/g-section]
 
-[gravstrap-section name="info"]
+[g-section name="info"]
 #####OFFICE
 
 9 - 3815 Thatcher Avenue  
@@ -201,28 +201,28 @@ S7R 1A3
 
 Monday - Friday 8 am - 5 pm  
 Saturday - Sunday Closed  
-[/gravstrap-section]
-[/gravstrap-contacts]
+[/g-section]
+[/g-contacts]
 
 
 #### Code definition
 
     [raw]
-    [gravstrap-contacts name=contacts attributes="class:module contacts" info_attributes="class:col-md-4" form_attributes="class:col-md-8"]
+    [g-contacts name=contacts attributes="class:module contacts" info_attributes="class:col-md-4" form_attributes="class:col-md-8"]
 
     ## Let your customers contact you
     Use the Contact module to let your customers contact you
 
     ___
 
-    [gravstrap-section name="form"]
+    [g-section name="form"]
     ##### Get in touch
     Need some information? Ask us a question filling the form below
 
-    [gravstrap-simple-form token="xxxxx" redirect_to="/thank-you-for-my-page" render=true][/gravstrap-simple-form]
-    [/gravstrap-section]
+    [g-simple-form token="xxxxx" redirect_to="/thank-you-for-my-page" render=true][/g-simple-form]
+    [/g-section]
 
-    [gravstrap-section name="info"]
+    [g-section name="info"]
     #####OFFICE
 
     9 - 3815 Thatcher Avenue  
@@ -240,210 +240,210 @@ Saturday - Sunday Closed
 
     Monday - Friday 8 am - 5 pm  
     Saturday - Sunday Closed  
-    [/gravstrap-section]
-    [/gravstrap-contacts]
+    [/g-section]
+    [/g-contacts]
     [/raw]
 
 ___
 
 ## Portfolio module
 
-[gravstrap-portfolio name=_portfolio attributes="class:portfolio module"]
+[g-portfolio name=_portfolio attributes="class:portfolio module"]
 
 ## Showcase your work
 Use the `Portfolio module` to spread your works to the world
 
 ___
 
-[gravstrap-thumbnail]
-[gravstrap-thumbnail-item image="coffee.jpg" url="http://diblas.net"][/gravstrap-thumbnail-item]
-[gravstrap-thumbnail-item image="farmerboy.jpg" url="http://diblas.net"][/gravstrap-thumbnail-item]
-[gravstrap-thumbnail-item image="girl.jpg" url="http://diblas.net"][/gravstrap-thumbnail-item]
-[gravstrap-thumbnail-item image="judah.jpg" url="http://diblas.net"][/gravstrap-thumbnail-item]
-[gravstrap-thumbnail-item image="origami.jpg" url="http://diblas.net"][/gravstrap-thumbnail-item]
-[gravstrap-thumbnail-item image="retrocam.jpg" url="http://diblas.net"][/gravstrap-thumbnail-item]
-[/gravstrap-thumbnail]
+[g-thumbnail]
+[g-thumbnail-item image="coffee.jpg" url="http://diblas.net"][/g-thumbnail-item]
+[g-thumbnail-item image="farmerboy.jpg" url="http://diblas.net"][/g-thumbnail-item]
+[g-thumbnail-item image="girl.jpg" url="http://diblas.net"][/g-thumbnail-item]
+[g-thumbnail-item image="judah.jpg" url="http://diblas.net"][/g-thumbnail-item]
+[g-thumbnail-item image="origami.jpg" url="http://diblas.net"][/g-thumbnail-item]
+[g-thumbnail-item image="retrocam.jpg" url="http://diblas.net"][/g-thumbnail-item]
+[/g-thumbnail]
 
-[/gravstrap-portfolio]
+[/g-portfolio]
 
 #### Code definition
 
     [raw]
-    [gravstrap-portfolio name=_portfolio attributes="class:portfolio module"]
+    [g-portfolio name=_portfolio attributes="class:portfolio module"]
 
     ## Showcase your work
     Use the `Portfolio module` to spread your works to the world
 
     ___
 
-    [gravstrap-thumbnail]
-    [gravstrap-thumbnail-item image="coffee.jpg" url="http://diblas.net"][/gravstrap-thumbnail-item]
-    [gravstrap-thumbnail-item image="farmerboy.jpg" url="http://diblas.net"][/gravstrap-thumbnail-item]
-    [gravstrap-thumbnail-item image="girl.jpg" url="http://diblas.net"][/gravstrap-thumbnail-item]
-    [gravstrap-thumbnail-item image="judah.jpg" url="http://diblas.net"][/gravstrap-thumbnail-item]
-    [gravstrap-thumbnail-item image="origami.jpg" url="http://diblas.net"][/gravstrap-thumbnail-item]
-    [gravstrap-thumbnail-item image="retrocam.jpg" url="http://diblas.net"][/gravstrap-thumbnail-item]
-    [/gravstrap-thumbnail]
+    [g-thumbnail]
+    [g-thumbnail-item image="coffee.jpg" url="http://diblas.net"][/g-thumbnail-item]
+    [g-thumbnail-item image="farmerboy.jpg" url="http://diblas.net"][/g-thumbnail-item]
+    [g-thumbnail-item image="girl.jpg" url="http://diblas.net"][/g-thumbnail-item]
+    [g-thumbnail-item image="judah.jpg" url="http://diblas.net"][/g-thumbnail-item]
+    [g-thumbnail-item image="origami.jpg" url="http://diblas.net"][/g-thumbnail-item]
+    [g-thumbnail-item image="retrocam.jpg" url="http://diblas.net"][/g-thumbnail-item]
+    [/g-thumbnail]
 
-    [/gravstrap-portfolio]
+    [/g-portfolio]
     [/raw]
 
 
 ## Team module
 
-[gravstrap-team name=team attributes="class:team module"]
+[g-team name=team attributes="class:team module"]
 
 ## Introduce your awesome team
 Use the `Team module` to introduce your awesome team.
 
 ___
 
-[gravstrap-team-item image="jane.jpg" attributes="class:col-md-4"]
+[g-team-item image="jane.jpg" attributes="class:col-md-4"]
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <div class="item-social">
-[gravstrap-link url="#" icon="twitter" icon_type="fontawesome" stacked=true][/gravstrap-link]
-[gravstrap-link url="#" icon="facebook" icon_type="fontawesome" stacked=true][/gravstrap-link]
-[gravstrap-link url="#" icon="linkedin" icon_type="fontawesome" stacked=true][/gravstrap-link]
+[g-link url="#" icon="twitter" icon_type="fontawesome" stacked=true][/g-link]
+[g-link url="#" icon="facebook" icon_type="fontawesome" stacked=true][/g-link]
+[g-link url="#" icon="linkedin" icon_type="fontawesome" stacked=true][/g-link]
 </div>
 
-[/gravstrap-team-item]
+[/g-team-item]
 
-[gravstrap-team-item image="mark.jpg" attributes="class:col-md-4"]
+[g-team-item image="mark.jpg" attributes="class:col-md-4"]
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <div class="item-social">
-[gravstrap-link url="#" icon="twitter" icon_type="fontawesome" stacked=true][/gravstrap-link]
-[gravstrap-link url="#" icon="facebook" icon_type="fontawesome" stacked=true][/gravstrap-link]
-[gravstrap-link url="#" icon="linkedin" icon_type="fontawesome" stacked=true][/gravstrap-link]
+[g-link url="#" icon="twitter" icon_type="fontawesome" stacked=true][/g-link]
+[g-link url="#" icon="facebook" icon_type="fontawesome" stacked=true][/g-link]
+[g-link url="#" icon="linkedin" icon_type="fontawesome" stacked=true][/g-link]
 </div>
 
-[/gravstrap-team-item]
+[/g-team-item]
 
-[gravstrap-team-item image="julia.jpg" attributes="class:col-md-4"]
+[g-team-item image="julia.jpg" attributes="class:col-md-4"]
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <div class="item-social">
-[gravstrap-link url="#" icon="twitter" icon_type="fontawesome" stacked=true][/gravstrap-link]
-[gravstrap-link url="#" icon="facebook" icon_type="fontawesome" stacked=true][/gravstrap-link]
-[gravstrap-link url="#" icon="linkedin" icon_type="fontawesome" stacked=true][/gravstrap-link]
+[g-link url="#" icon="twitter" icon_type="fontawesome" stacked=true][/g-link]
+[g-link url="#" icon="facebook" icon_type="fontawesome" stacked=true][/g-link]
+[g-link url="#" icon="linkedin" icon_type="fontawesome" stacked=true][/g-link]
 </div>
 
-[/gravstrap-team-item]
-[/gravstrap-team]
+[/g-team-item]
+[/g-team]
 
 #### Code definition
 
     [raw]
-    [gravstrap-team name=team attributes="class:team module"]
+    [g-team name=team attributes="class:team module"]
 
     ## Introduce your awesome team
     Use the `Team module` to introduce your awesome team.
 
     ___
 
-    [gravstrap-team-item image="jane.jpg" attributes="class:col-md-4"]
+    [g-team-item image="jane.jpg" attributes="class:col-md-4"]
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     <div class="item-social">
-    [gravstrap-link url="#" icon="twitter" icon_type="fontawesome" stacked=true][/gravstrap-link]
-    [gravstrap-link url="#" icon="facebook" icon_type="fontawesome" stacked=true][/gravstrap-link]
-    [gravstrap-link url="#" icon="linkedin" icon_type="fontawesome" stacked=true][/gravstrap-link]
+    [g-link url="#" icon="twitter" icon_type="fontawesome" stacked=true][/g-link]
+    [g-link url="#" icon="facebook" icon_type="fontawesome" stacked=true][/g-link]
+    [g-link url="#" icon="linkedin" icon_type="fontawesome" stacked=true][/g-link]
     </div>
 
-    [/gravstrap-team-item]
+    [/g-team-item]
 
-    [gravstrap-team-item image="mark.jpg" attributes="class:col-md-4"]
+    [g-team-item image="mark.jpg" attributes="class:col-md-4"]
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     <div class="item-social">
-    [gravstrap-link url="#" icon="twitter" icon_type="fontawesome" stacked=true][/gravstrap-link]
-    [gravstrap-link url="#" icon="facebook" icon_type="fontawesome" stacked=true][/gravstrap-link]
-    [gravstrap-link url="#" icon="linkedin" icon_type="fontawesome" stacked=true][/gravstrap-link]
+    [g-link url="#" icon="twitter" icon_type="fontawesome" stacked=true][/g-link]
+    [g-link url="#" icon="facebook" icon_type="fontawesome" stacked=true][/g-link]
+    [g-link url="#" icon="linkedin" icon_type="fontawesome" stacked=true][/g-link]
     </div>
 
-    [/gravstrap-team-item]
+    [/g-team-item]
 
-    [gravstrap-team-item image="julia.jpg" attributes="class:col-md-4"]
+    [g-team-item image="julia.jpg" attributes="class:col-md-4"]
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     <div class="item-social">
-    [gravstrap-link url="#" icon="twitter" icon_type="fontawesome" stacked=true][/gravstrap-link]
-    [gravstrap-link url="#" icon="facebook" icon_type="fontawesome" stacked=true][/gravstrap-link]
-    [gravstrap-link url="#" icon="linkedin" icon_type="fontawesome" stacked=true][/gravstrap-link]
+    [g-link url="#" icon="twitter" icon_type="fontawesome" stacked=true][/g-link]
+    [g-link url="#" icon="facebook" icon_type="fontawesome" stacked=true][/g-link]
+    [g-link url="#" icon="linkedin" icon_type="fontawesome" stacked=true][/g-link]
     </div>
 
-    [/gravstrap-team-item]
-    [/gravstrap-team]
+    [/g-team-item]
+    [/g-team]
     [/raw]
 
 ___
 
 ## What we do
 
-[gravstrap-what-we-do name="what_we_do" attributes="class:what-we-do module" column_attributes="class:col-md-12"]
+[g-what-we-do name="what_we_do" attributes="class:what-we-do module" column_attributes="class:col-md-12"]
 
 ## Explain your business
 Use the `What we do module` to explain your customers the services you offer.
 ___
 
-[gravstrap-what-we-do-item attributes="class:col-md-4"]
+[g-what-we-do-item attributes="class:col-md-4"]
 
 <div class="item-icon">
-[gravstrap-icon icon="bullhorn fa-5x" icon_type="fontawesome"][/gravstrap-icon]
+[g-icon icon="bullhorn fa-5x" icon_type="fontawesome"][/g-icon]
 </div>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-[/gravstrap-what-we-do-item]
+[/g-what-we-do-item]
 
-[gravstrap-what-we-do-item attributes="class:col-md-4"]
+[g-what-we-do-item attributes="class:col-md-4"]
 <div class="item-icon">
-[gravstrap-icon icon="bolt fa-5x" icon_type="fontawesome"][/gravstrap-icon]
+[g-icon icon="bolt fa-5x" icon_type="fontawesome"][/g-icon]
 </div>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-[/gravstrap-what-we-do-item]
+[/g-what-we-do-item]
 
-[gravstrap-what-we-do-item attributes="class:col-md-4"]
+[g-what-we-do-item attributes="class:col-md-4"]
 
 <div class="item-icon">
-[gravstrap-icon icon="heart fa-5x" icon_type="fontawesome"][/gravstrap-icon]
+[g-icon icon="heart fa-5x" icon_type="fontawesome"][/g-icon]
 </div>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-[/gravstrap-what-we-do-item]
+[/g-what-we-do-item]
 
-[/gravstrap-what-we-do]
+[/g-what-we-do]
 
 
 #### Code definition
 
     [raw]
-    [gravstrap-what-we-do name="what_we_do" attributes="class:what-we-do module" column_attributes="class:col-md-12"]
+    [g-what-we-do name="what_we_do" attributes="class:what-we-do module" column_attributes="class:col-md-12"]
 
     ## Explain your business
     Use the `What we do module` to explain your customers the services you offer.
     ___
 
-    [gravstrap-what-we-do-item attributes="class:col-md-4"]
+    [g-what-we-do-item attributes="class:col-md-4"]
 
     <div class="item-icon">
-    [gravstrap-icon icon="bullhorn fa-5x" icon_type="fontawesome"][/gravstrap-icon]
+    [g-icon icon="bullhorn fa-5x" icon_type="fontawesome"][/g-icon]
     </div>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-    [/gravstrap-what-we-do-item]
+    [/g-what-we-do-item]
 
-    [gravstrap-what-we-do-item attributes="class:col-md-4"]
+    [g-what-we-do-item attributes="class:col-md-4"]
     <div class="item-icon">
-    [gravstrap-icon icon="bolt fa-5x" icon_type="fontawesome"][/gravstrap-icon]
+    [g-icon icon="bolt fa-5x" icon_type="fontawesome"][/g-icon]
     </div>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-    [/gravstrap-what-we-do-item]
+    [/g-what-we-do-item]
 
-    [gravstrap-what-we-do-item attributes="class:col-md-4"]
+    [g-what-we-do-item attributes="class:col-md-4"]
 
     <div class="item-icon">
-    [gravstrap-icon icon="heart fa-5x" icon_type="fontawesome"][/gravstrap-icon]
+    [g-icon icon="heart fa-5x" icon_type="fontawesome"][/g-icon]
     </div>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    [/gravstrap-what-we-do-item]
+    [/g-what-we-do-item]
 
-    [/gravstrap-what-we-do]
+    [/g-what-we-do]
     [/raw]
 
 
@@ -452,7 +452,7 @@ ___
 
 ## Where we are module
 
-[gravstrap-where-we-are name=where-we-are attributes="class:module where-we-are"]
+[g-where-we-are name=where-we-are attributes="class:module where-we-are"]
 
 ## Show your customers where you are
 Use the `Where we are` module to tell your customers where you are
@@ -461,12 +461,12 @@ ___
 
 [GOOGLEMAPS:map]
 
-[/gravstrap-where-we-are]
+[/g-where-we-are]
 
 #### Code definition
 
     [raw]
-    [gravstrap-where-we-are name=where-we-are attributes="class:module where-we-are"]
+    [g-where-we-are name=where-we-are attributes="class:module where-we-are"]
 
     ## Show your customers where you are
     Use the `Where we are` module to tell your customers where you are
@@ -475,7 +475,7 @@ ___
 
     {GOOGLEMAPS:map}
 
-    [/gravstrap-where-we-are]
+    [/g-where-we-are]
     [/raw]
 
 >>> Please note that `GOOGLEMAPS` definition must be surrounded by **[ ]** instead of **{ }**: that was only a rendering trick.
@@ -483,58 +483,58 @@ ___
 
 ## Footer One module
 
-[gravstrap-footer-one]
-[gravstrap-section name="credits"]
+[g-footer-one]
+[g-section name="credits"]
 
 This website is made with [Grav CMS](http://getgrav.org/) and it is powerd by [Gravstrap Theme](http://diblas.net/themes/gravstrap-theme-to-start-grav-cms-site-with-bootstrap-support/) and [Gravstrap Plugin](http://diblas.net/plugins/use-bootstrap-elements-in-the-grav-cms-way/)
 
-[/gravstrap-section]
+[/g-section]
 
-[gravstrap-section name="copyright"]Joe Bloggs[/gravstrap-section]
+[g-section name="copyright"]Joe Bloggs[/g-section]
 
-[/gravstrap-footer-one]
+[/g-footer-one]
 
 #### Code definition
 
-    [raw][gravstrap-footer-one]
-    [gravstrap-section name="credits"]
+    [raw][g-footer-one]
+    [g-section name="credits"]
 
     This website is made with [Grav CMS](http://getgrav.org/) and it is powerd by [Gravstrap Theme](http://diblas.net/themes/gravstrap-theme-to-start-grav-cms-site-with-bootstrap-support/) and [Gravstrap Plugin](http://diblas.net/plugins/use-bootstrap-elements-in-the-grav-cms-way/)
 
-    [/gravstrap-section]
+    [/g-section]
 
-    [gravstrap-section name="copyright"]Joe Bloggs[/gravstrap-section]
+    [g-section name="copyright"]Joe Bloggs[/g-section]
 
-    [/gravstrap-footer-one]
+    [/g-footer-one]
     [/raw]
 
 
 
 ## Footer Two module
 
-[gravstrap-footer-two]
-[gravstrap-section name="credits"]
+[g-footer-two]
+[g-section name="credits"]
 
 This website is made with [Grav CMS](http://getgrav.org/) and it is powerd by [Gravstrap Theme](http://diblas.net/themes/gravstrap-theme-to-start-grav-cms-site-with-bootstrap-support/) and [Gravstrap Plugin](http://diblas.net/plugins/use-bootstrap-elements-in-the-grav-cms-way/)
 
-[/gravstrap-section]
+[/g-section]
 
-[gravstrap-section name="copyright"]Joe Bloggs[/gravstrap-section]
-    [gravstrap-section name="license"]MIT License[/gravstrap-section]
+[g-section name="copyright"]Joe Bloggs[/g-section]
+    [g-section name="license"]MIT License[/g-section]
 
-[/gravstrap-footer-two]
+[/g-footer-two]
 
 #### Code definition
 
-    [raw][gravstrap-footer-two]
-    [gravstrap-section name="credits"]
+    [raw][g-footer-two]
+    [g-section name="credits"]
 
     This website is made with [Grav CMS](http://getgrav.org/) and it is powerd by [Gravstrap Theme](http://diblas.net/themes/gravstrap-theme-to-start-grav-cms-site-with-bootstrap-support/) and [Gravstrap Plugin](http://diblas.net/plugins/use-bootstrap-elements-in-the-grav-cms-way/)
 
-    [/gravstrap-section]
+    [/g-section]
 
-    [gravstrap-section name="copyright"]Joe Bloggs[/gravstrap-section]
-    [gravstrap-section name="license"]MIT License[/gravstrap-section]
+    [g-section name="copyright"]Joe Bloggs[/g-section]
+    [g-section name="license"]MIT License[/g-section]
 
-    [/gravstrap-footer-two]
+    [/g-footer-two]
     [/raw]

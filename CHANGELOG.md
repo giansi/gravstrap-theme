@@ -1,3 +1,8 @@
+# v1.0.1
+## 03/02/2016
+1.[](#improved)  
+    * updated demo pages
+
 # v1.0.0
 ## 03/01/2016
 1.[](#improved)  
