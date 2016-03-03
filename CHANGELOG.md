@@ -1,3 +1,9 @@
+# v1.0.2
+## 03/03/2016
+1.[](#bugfix)  
+    * updated basic components demo page
+    * fixed typo in blueprints version
+
 # v1.0.1
 ## 03/02/2016
 1.[](#improved)  
