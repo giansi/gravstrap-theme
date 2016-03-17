@@ -19,6 +19,3 @@ content:
             - _where_we_are
             - _contacts
 ---
-
-
-

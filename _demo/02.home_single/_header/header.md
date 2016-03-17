@@ -1,5 +1,6 @@
 ---
 visible: false
+cache_enable: false
 ---
 [g-navbar id="navbar2" name=navbar2 fixed=top centering=none brand_text="Gravstrap" render=false]
     [g-navbar-menu name=menu0 alignment="center" onepage=true attributes="class:highdensity-menu"][/g-navbar-menu]

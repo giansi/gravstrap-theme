@@ -1,5 +1,6 @@
 ---
 visible: false
+cache_enable: false
 ---
 
 [g-navbar id="navbar1" name=navbar1 fixed=top centering=none brand_text="Gravstrap" render=false]

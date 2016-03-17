@@ -1,3 +1,8 @@
+# v1.0.3
+## 03/17/2016
+1.[](#improved)  
+    * updated demo pages
+
 # v1.0.2
 ## 03/03/2016
 1.[](#bugfix)  

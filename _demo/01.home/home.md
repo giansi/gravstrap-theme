@@ -3,18 +3,6 @@ title: Home
 metadata:
   description: Gravstrap Theme helps you to start a new Grav CMS site with Bootstrap support and several ready to use modules. It is also perfect to extend to start a new Bootstrap custom theme, to fit your needs.
 slug: welcome-to-gravstrap-theme
-
-googlemaps:
-    map:
-        center: 41.90278, 12.49637
-        zoom: 12
-        #type: TERRAIN
-        markers:
-            - location: 41.90278, 12.49637
-              title: Gravstrap Theme
-              zIndex: 1
-              timeout: 1000
-              info: <strong>Meet Us</strong>.<br/>We are there!
 ---
 
 [g-jumbotron name="jumbotron1" fullwidth="true" image="bg.jpg" render=false]
@@ -145,7 +133,12 @@ Use the `Where we are` module to tell your customers where you are
 
 ___
 
-[GOOGLEMAPS:map]
+[g-map id=map zoom=12 center="41.90278,12.49637"]
+[g-map-marker location="41.90278, 12.49637" title="Gravstrap theme"]
+**Meet Us**
+We are there!
+[/g-map-marker]
+[/g-map]
 
 [/g-where-we-are]
 
