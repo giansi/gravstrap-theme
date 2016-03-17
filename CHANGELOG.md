@@ -1,6 +1,7 @@
 # v1.0.3
 ## 03/17/2016
 1.[](#improved)  
+    * removed googlemaps dependency
     * updated demo pages
 
 # v1.0.2

@@ -25,7 +25,6 @@ dependencies:
   - archives
   - breadcrumbs
   - simple_form
-  - googlemaps
 
 form:
   validation: loose
