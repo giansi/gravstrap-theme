@@ -4,25 +4,8 @@ metadata:
   description: Use available components rendering them by their templates when you need to represent dynamic data fetched from an external source.
 slug: dynamic-bootstrap-components-as-shortcodes-for-grav-cms
 
-simple_form:
-        token: "xxxxx"
-        template_file: default
-        redirect_to: /thank-you-for-my-page
-
-googlemaps:
-    map:
-        center: 41.90278, 12.49637
-        zoom: 12
-        #type: TERRAIN
-        markers:
-            - location: 41.90278, 12.49637
-              title: Gravstrap Theme
-              zIndex: 1
-              timeout: 1000
-              info: <strong>Meet Us</strong>.<br/>We are there!
-
 highlight:
-    theme: ir_black
+    theme: ir-black
 ---
 
 

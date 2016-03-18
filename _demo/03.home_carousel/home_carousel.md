@@ -18,8 +18,5 @@ content:
             - _team
             - _where_we_are
             - _contacts
-
-highlight:
-    theme: ir_black
 ---
 

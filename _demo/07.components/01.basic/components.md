@@ -5,7 +5,7 @@ metadata:
 slug: basic-shortcodes-for-grav-cms
 
 highlight:
-    theme: ir_black
+    theme: ir-black
 ---
 
 

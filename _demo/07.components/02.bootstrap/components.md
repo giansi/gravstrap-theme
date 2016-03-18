@@ -4,25 +4,8 @@ metadata:
   description: Gravstrap plugin implements all Bootstrap components you can add to any page, using powerful shortcodes syntax.
 slug: bootstrap-components-as-shortcodes-for-grav-cms
 
-simple_form:
-        token: "xxxxx"
-        template_file: default
-        redirect_to: /thank-you-for-my-page
-
-googlemaps:
-    map:
-        center: 41.90278, 12.49637
-        zoom: 12
-        #type: TERRAIN
-        markers:
-            - location: 41.90278, 12.49637
-              title: Gravstrap Theme
-              zIndex: 1
-              timeout: 1000
-              info: <strong>Meet Us</strong>.<br/>We are there!
-
 highlight:
-    theme: ir_black
+    theme: ir-black
 ---
 
 

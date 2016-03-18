@@ -1,3 +1,10 @@
+# v1.0.4
+## 03/18/2016
+1.[](#improved)  
+    * added empty custom.css stylesheet
+    * required highlight plugin
+    * updated demo pages
+
 # v1.0.3
 ## 03/17/2016
 1.[](#improved)  
