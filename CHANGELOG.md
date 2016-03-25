@@ -1,3 +1,8 @@
+# v1.0.5
+## 03/25/2016
+1.[](#bugfix)  
+    * removed the custom.css stylesheet file
+
 # v1.0.4
 ## 03/18/2016
 1.[](#improved)  
