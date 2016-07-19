@@ -1,12 +1,12 @@
 @charset "UTF-8";
-@import url(//fonts.googleapis.com/css?family=Source+Code+Pro|Opens+Sans|Gentium+Basic|Shadows+Into+Light+Two);
+@import url(//fonts.googleapis.com/css?family=Source+Code+Pro|Opens+Sans|Raleway);
 body {
   font-family: "Opens Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-size: 1.8rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Gentium Basic", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Raleway", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
 
 h1 {
@@ -225,6 +225,15 @@ a:hover {
 .navbar .navbar-toggle {
   background-color: #333;
 }
+@media screen and (max-width: 1170px) {
+  .navbar .highdensity-menu {
+    max-width: 400px;
+    padding-top: 2px;
+  }
+  .navbar .highdensity-menu li a {
+    padding: 2px 6px;
+  }
+}
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -402,7 +411,7 @@ a:hover {
 }
 
 .navbar {
-  font-family: "Gentium Basic", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Raleway", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
 .navbar ul.navbar-right li a {
   padding: 1.4rem 0.7rem;
@@ -692,7 +701,7 @@ a:hover {
 }
 .showcase .button {
   color: #FFFFFF;
-  font-family: "Gentium Basic", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Raleway", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   padding: 0.8rem 1.5rem;
   background: rgba(255, 255, 255, 0);
   border: 2px solid #FFFFFF;

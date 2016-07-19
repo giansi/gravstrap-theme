@@ -1,3 +1,8 @@
+# v1.0.6
+## 07/19/2016
+1.[](#bugfix)  
+    * changed header font
+
 # v1.0.5
 ## 03/25/2016
 1.[](#bugfix)  
