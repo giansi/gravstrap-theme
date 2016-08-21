@@ -9,7 +9,7 @@ highlight:
 ---
 
 
-[g-jumbotron name="jumbotron1" fullwidth="true" image="bg.jpg" render=false]
+[g-jumbotron name="jumbotron1" fullwidth="true" image="bg_basic.jpg" render=false]
 # Basic components
 
 Gravstrap plugin implements some basic components, like links, icons and buttons you can use on their own or to build complex components like social menus.

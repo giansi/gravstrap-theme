@@ -11,7 +11,7 @@ cache_enable: false
     [/g-navbar-menu]    
 [/g-navbar]
 
-[g-jumbotron name="jumbotron1" fullwidth="true" image="bg.jpg" render=false]
+[g-jumbotron name="jumbotron1" fullwidth="true" image="bg_home.jpg" render=false]
 # Gravstrap theme single page
 
 Gravstrap navbar component can be easily configured to implement an awesome single page web site: use the menu to scroll to each page section

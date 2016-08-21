@@ -1,11 +1,17 @@
 ---
 title: Home
-metadata:
-  description: Gravstrap Theme helps you to start a new Grav CMS site with Bootstrap support and several ready to use modules. It is also perfect to extend to start a new Bootstrap custom theme, to fit your needs.
 slug: welcome-to-gravstrap-theme
+taxonomy:
+    category: blog
+    tag: [sample, demo, grav]
+metadata:
+    description: Gravstrap Theme helps you to start a new Grav CMS site with Bootstrap support and several ready to use modules. It is also perfect to extend to start a new Bootstrap custom theme, to fit your needs.
+    author: Gian
+
+foo: bar
 ---
 
-[g-jumbotron name="jumbotron1" fullwidth="true" image="bg.jpg" render=false]
+[g-jumbotron name="jumbotron1" fullwidth="true" image="bg_home.jpg" render=false]
 # Gravstrap
 
 Gravstrap is a powerful Grav CMS plugin which simplifies Bootstrap components usage, implementing them as shortcodes. This theme, built on top of Gravstrap, helps you to start a new Bootstrap custom theme, to create your unique design.
@@ -15,7 +21,6 @@ Gravstrap is a powerful Grav CMS plugin which simplifies Bootstrap components us
 [Learn Gravstrap](http://diblas.net/plugins/use-bootstrap-components-as-shortcodes-in-grav-cms){.btn .btn-outline-inverse .btn-lg}
 
 [/g-jumbotron]
-
 
 [g-what-we-do name="what_we_do" attributes="class:what-we-do module" column_attributes="class:col-md-12"]
 

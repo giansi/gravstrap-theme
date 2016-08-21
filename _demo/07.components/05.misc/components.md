@@ -9,10 +9,10 @@ highlight:
 ---
 
 
-[g-jumbotron name="jumbotron1" fullwidth="true" image="bg.jpg" render=false]
+[g-jumbotron name="jumbotron1" fullwidth="true" image="bg_misc.jpg" render=false]
 # Miscellaneous components
 
-A set of useful, not classificable, components 
+A set of useful, not classificable, components
 
 [/g-jumbotron]
 
@@ -49,4 +49,14 @@ We are there!
 
     [raw]
     [g-simple-form token="xxxxx" redirect_to="/thank-you-for-my-page" render=true][/g-simple-form]
+    [/raw]
+
+## Images collage
+
+[g-images-collage columns="4" border="3" width="800" attributes="title:Image title,class:img-responsive"][/g-images-collage]
+
+#### Code definition
+
+    [raw]
+    [g-images-collage columns="4" border="3" width="800" attributes="title:Image title,class:img-responsive"][/g-images-collage]
     [/raw]

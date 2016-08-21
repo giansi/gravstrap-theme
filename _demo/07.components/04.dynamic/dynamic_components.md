@@ -9,7 +9,7 @@ highlight:
 ---
 
 
-[g-jumbotron name="jumbotron1" fullwidth="true" image="bg.jpg" render=false]
+[g-jumbotron name="jumbotron1" fullwidth="true" image="bg_dynamic.jpg" render=false]
 # Render components by templates
 
 You can use the available components rendering them by their templates when you need to represent dynamic data fetched from an external source, like a database or a json file.

@@ -9,7 +9,7 @@ highlight:
 ---
 
 
-[g-jumbotron name="jumbotron1" fullwidth="true" image="bg.jpg" render=false]
+[g-jumbotron name="jumbotron1" fullwidth="true" image="bg_bootstrap.jpg" render=false]
 # Bootstrap components as shortcodes
 
 Gravstrap plugin implements all Bootstrap components you can add to any page, using powerful shortcodes syntax: watch them in action in this page.
@@ -432,7 +432,7 @@ Thumbnails with contents:
 
 [g-thumbnail name=thumbnail2]
 [g-thumbnail-item image="image1.jpg" class="col-md-6"]
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
 Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
@@ -440,7 +440,7 @@ Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia od
 [/g-thumbnail-item]
 
 [g-thumbnail-item image="image2.jpg" class="col-md-6"]
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
 Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
@@ -452,7 +452,7 @@ Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia od
     [raw]
     [g-thumbnail name=thumbnail2]
     [g-thumbnail-item image="image1.jpg" class="col-md-6"]
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
     Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
@@ -460,7 +460,7 @@ Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia od
     [/g-thumbnail-item]
 
     [g-thumbnail-item image="image2.jpg" class="col-md-6"]
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
     Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 

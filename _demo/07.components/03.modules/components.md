@@ -8,7 +8,7 @@ highlight:
     theme: ir-black
 ---
 
-[g-jumbotron name="jumbotron1" fullwidth="true" image="bg.jpg" render=false]
+[g-jumbotron name="jumbotron1" fullwidth="true" image="bg_modules.jpg" render=false]
 # Modules shortcodes
 
 Gravstrap plugin implements several modules you can use as shortcodes to simplify the web site building: watch them in action down in this page.
